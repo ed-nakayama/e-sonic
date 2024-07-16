@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://e-sonic.co.jp/sitemap.xml

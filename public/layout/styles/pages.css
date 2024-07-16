@@ -1,0 +1,194 @@
+/*----------------------------------------------記事------------------------------------*/
+
+.post-image {
+	margin-bottom: 40px;
+}
+.blog-post-title a {
+	color: #979797;
+	background-color: #FFFFFF;
+}
+.blog-post-title a:hover {
+	color: #FF9900;
+	background-color: #FFFFFF;
+}
+.read-more {
+	text-align: right;
+}
+.read-more a {
+	font-size: 16px;
+	font-family: Arial;
+	font-weight: normal;
+	-moz-border-radius: 42px;
+	-webkit-border-radius: 42px;
+	border-radius: 42px;
+	border: 1px solid #337fed;
+	padding: 5px 18px;
+	text-decoration: none;
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(5%, #3d94f6), color-stop(100%, #1e62d0) );
+	background: -moz-linear-gradient( center top, #3d94f6 5%, #1e62d0 100% );
+	background: -ms-linear-gradient( top, #3d94f6 5%, #1e62d0 100% );
+ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#3d94f6', endColorstr='#1e62d0');
+	background-color: #3d94f6;
+	color: #ffffff;
+	display: inline-block;
+	text-shadow: 1px 1px 0px #1570cd;
+	-webkit-box-shadow: inset 1px 1px 0px 0px #97c4fe;
+	-moz-box-shadow: inset 1px 1px 0px 0px #97c4fe;
+	box-shadow: inset 1px 1px 0px 0px #97c4fe;
+}
+.read-more a:hover {
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(5%, #1e62d0), color-stop(100%, #3d94f6) );
+	background: -moz-linear-gradient( center top, #1e62d0 5%, #3d94f6 100% );
+	background: -ms-linear-gradient( top, #1e62d0 5%, #3d94f6 100% );
+ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e62d0', endColorstr='#3d94f6');
+	background-color: #1e62d0;
+}
+.read-more a:active {
+	position: relative;
+	top: 1px;
+}
+.blog-post-meta {
+	font-size: .8em;
+}
+.blog-post-meta ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.blog-post-meta ul li {
+	display: inline;
+	margin-left: 5px;
+	padding-left: 5px;
+	border-left: 1px solid #D6D6D6;
+}
+.blog-post-meta ul li:first-child {
+	margin-left: 0;
+	padding: 0;
+	border: none;
+}
+/*----------------------------------------------ＴＯＰページ-------------------------------------*/
+
+#homepage {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+#intro {
+	padding: 30px 0;
+}
+#intro .boxholder {
+	padding: 15px;
+	border-color: #333333;
+}
+figure {
+	border-bottom: #CCC 1px dotted;
+}
+.sdw {
+	height: 10px;
+	display: block;
+	background-image: url(images/header_bg_shadow.png);
+	background-repeat: repeat-x;
+}
+.sdw2 {
+	height: 10px;
+	display: block;
+	background-image: url(images/header_bg_shadow_gyaku.png);
+	background-repeat: repeat-x;
+}
+/*----------------------------------------------セカンドページ----------------------------------------------*/
+.word {
+	color: #039;
+	font-size: 2.5em;
+	line-height: 1.5em;
+}
+.explanation {
+	line-height: 2em;
+}
+.rightlink {
+	text-align: right;
+}
+.roundbox {
+	line-height: 1.5em;
+	background-color: #F3F4F8;
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+	border-radius: 7px;/*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
+	padding: 0.5em;
+	color: #000;
+}
+.explanation p {
+	padding-left: 20px;
+}
+/*----------------------------------------------問い合わせ------------------------------------*/
+
+.required {
+	color: #F00;
+}
+.window {
+	margin: 10px;
+	padding: 0;
+}
+.window p {
+	width: 540px;
+	margin: 0 0 10px 0;
+	padding: 0;
+	border: 1px solid #F0F0F0;
+	background-color: #EBEBEB;
+	line-height: 1.4;
+	overflow: scroll;
+	height: 180px;
+}
+
+.window2 {
+	margin: 10px;
+	padding: 0;
+}
+
+.window2 p {
+	margin: 0 0 10px 0;
+	padding: 0;
+	border: 1px solid #F0F0F0;
+	background-color: #EBEBEB;
+	line-height: 1.4;
+	overflow: scroll;
+	height: 200px;
+}
+
+/*----------------------------------------------404-------------------------------------*/
+
+#fof {
+	display: block;
+	margin: 0;
+	padding: 100px 0 20px 0;
+	text-align: center;
+}
+#fof h1, #fof h2 {
+	margin: 0;
+	padding: 0;
+}
+#fof h1 {
+	margin-top: -70px;
+	font-size: 10em;
+	text-shadow: 6px 6px 0 rgba(229, 228, 227, 1);
+}
+#fof h2 {
+	margin-top: -30px;
+	font-size: 3em;
+}
+#fof p {
+	margin: 0;
+	padding: 0;
+}
+#fof p.notice {
+	display: block;
+	width: 100%;
+	margin-bottom: 50px;
+	clear: both;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+#fof p.clear {
+	padding: 10px;
+	border: 1px solid #E5E4E3;
+	font-size: 16px;
+}

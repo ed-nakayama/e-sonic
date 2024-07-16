@@ -1,0 +1,729 @@
+@charset "UTF-8";
+html,body{
+	height: 100%;
+}
+body {
+/*    background-color: #B6BED1;*/
+    background-color: #FFFFFF;
+    color: #484848;
+    font-size: 14px;
+    font-family: sans-serif;
+    line-height: 1.4;
+    -webkit-text-size-adjust: 100%;
+
+    /* footar用 */ 
+    display: flex;
+    flex-direction: column;
+}
+
+/*/////////////////////////////
+ common - ドロップダウン（グローバルナビ）
+/////////////////////////////*/
+.dropdown-global-menu {
+    position: relative;
+}
+.dropdown-global-menu li > a  {
+    pointer-events: visible;
+}
+.dropdown-global-menu .inner {
+    margin-top: 0;
+    padding: 0;
+    border-top: none;
+    border-bottom: none;
+
+    width: 200px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    padding: 20px;
+    background-color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: .2s;
+}
+.dropdown-global-menu .inner li {
+    position: relative;
+}
+.dropdown-global-menu .inner li a {
+    color: #484848;
+}
+.dropdown-global-menu .inner li:not(:last-child) {
+    margin-bottom: 20px;
+}
+.dropdown-global-menu li:hover > ul {
+    visibility: visible;
+    opacity: 1;
+}
+
+/*/////////////////////////////
+ common - ドロップダウン（ユーザーボタン）
+/////////////////////////////*/
+.dropdown-menu {
+    position: relative;
+    text-align: right;
+}
+.dropdown-menu li > a  {
+    pointer-events: visible;
+}
+.dropdown-menu .inner {
+    margin-top: 0;
+    padding: 0;
+    text-align: center;
+    border-top: none;
+    border-bottom: none;
+
+    width: 100%;
+    position: absolute;
+    top: 25px;
+    left: 0;
+/*    padding: 15px;*/
+    padding: 5px;
+    background-color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: .2s;
+}
+.dropdown-menu .inner li {
+    position: relative;
+    white-space:nowrap;
+}
+.dropdown-menu .inner li a {
+    color: #484848;
+    text-align: center;
+    text-decoration: underline;
+}
+.dropdown-menu .inner li:not(:last-child) {
+/*    margin-bottom: 25px; T.N */
+    margin-bottom: 10px;
+}
+.dropdown-menu li:hover > ul {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/*/////////////////////////////
+ common - テーブル 設定
+/////////////////////////////*/
+/* 共通 */
+table {
+    border-collapse: collapse;
+}
+
+/* 共通 - マージンが必要な場合 */
+table.mb-ajust {
+    margin-bottom: 30px;
+}
+
+
+/* 製品一覧 */
+.tbl-prodlist {
+    width: 100%;
+    font-size: 12px;
+}
+.tbl-prodlist tr:nth-child(odd) td {
+	background-color:#F5F5F5;
+}
+.tbl-prodlist th:nth-child(1) {
+	width: auto%;
+}
+.tbl-prodlist th:nth-child(2) {
+	width: 8%;
+}
+.tbl-prodlist th:nth-child(3) {
+	width: 6%;
+}
+.tbl-prodlist th:nth-child(4) {
+	width: 20%;
+}
+.tbl-prodlist th:nth-child(5) {
+	width: 8%;
+}
+.tbl-prodlist th:nth-child(6) {
+	width: 8%;
+}
+.tbl-prodlist th:nth-child(7) {
+	width: 8%;
+}
+.tbl-prodlist th:nth-child(8) {
+	width: 8%;
+}
+.tbl-prodlist th:nth-child(9) {
+	width: 8%;
+}
+
+.tbl-prodlist th {
+    border-bottom: 1px solid #707070;
+}
+.tbl-prodlist th, .tbl-prodlist td {
+    padding: 5px 10px;
+}
+
+
+/* セレクトボックス ●の色変更用 */
+.selectStatus span { margin-right: 3px; }
+.color-num1 { color: #EC6EAD; }
+.color-num2 { color: #04D5CC; }
+.color-num3 { color: #FFF539; }
+.color-num4 { color: #B6BED1; }
+.color-num5 { color: #707070; }
+
+
+/*/////////////////////////////
+ common - 上部 メインタイトルとボタン 
+/////////////////////////////*/
+.secTitle {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.secTitle-btn {
+    margin-left: 30px;
+}
+.secTitle-btn .item-btn {
+    display: flex;
+}
+.secTitle-btn .item-btn li {
+    width: 150px;
+}
+.secTitle-btn .item-btn li:not(:last-child) {
+    margin-right: 10px;
+}
+
+/*/////////////////////////////
+ common - 上部 ボタンとチェックボックス
+/////////////////////////////*/
+.secBtnHead {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.secBtnHead .item-btn {
+    display: flex;
+}
+.secBtnHead .item-btn li {
+    width: 120px;
+}
+.secBtnHead .item-btn li:not(:last-child) {
+    margin-right: 10px;
+}
+.secBtnHead .item-btn li .squareBtn {
+    padding: 5px 0;
+}
+
+
+/*/////////////////////////////
+ header
+/////////////////////////////*/
+.header {
+    margin-bottom: 30px;
+/*    background-color: #001E6F;*/
+    background-color: #D9E5FF;
+    color: #fff;
+}
+.headInner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    margin: auto;
+    padding: 11px 0;
+}
+.headMain {
+    display: flex;
+    align-items: center;
+}
+
+.headInner .logo {
+    margin-right: 50px;
+    padding: 5px 15px;
+    border: none
+    white-space: nowrap;
+}
+
+
+/*/////////////////////////////
+ footer
+/////////////////////////////*/
+.footer {
+    width: 100%;
+    max-width: 100%;
+    background-color: #001E6F;
+    padding: 8px 0;
+    color: #fff;
+    text-align: center;
+}
+
+/*/////////////////////////////
+ contents - レイアウト
+/////////////////////////////*/
+.main {
+    flex: 1 0 auto; /* footar用にコンテンツの高さを取る */ 
+    margin-bottom: 15px;
+}
+.mainContents {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    margin: auto;
+}
+
+/* 1カラム */
+.mainContentsInner-oneColumn {
+    width: 100%;
+}
+
+/* 2カラム */
+.mainContentsInner {
+    width: 850px;
+}
+
+/* セクション ----------------- */
+.secContents {
+    background-color: #fff;
+}
+.secContents-mb {
+    background-color: #fff;
+/*    margin-bottom: 30px; T.N */
+    margin-bottom: 10px;
+}
+.secContentsInner {
+/*    padding: 30px;*/
+    padding: 10px;
+}
+
+/*/////////////////////////////
+ contents - タイトル
+/////////////////////////////*/
+.mainTtl {
+/*    margin-bottom: 25px;*/
+    margin-bottom: 5px;
+}
+.title-main {
+/*    font-size: 34px;*/
+    font-size: 28px;
+}
+.contentsTitle {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.title-sub {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* タイトル 両端揃え横並びにテキストリンクがある場合 */
+.contentsTitle-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.contentsTitle-container .title {
+    font-size: 18px;
+    padding-right: 30px;
+}
+.contentsTitle-container .linkList {
+    display: flex;
+}
+.contentsTitle-container .linkList li:not(:last-child) {
+    margin-right: 20px;
+}
+.contentsTitle-container .linkList a {
+    text-decoration: underline;
+}
+
+/*/////////////////////////////
+ contents - ボタン
+/////////////////////////////*/
+/* 中央寄せ用のコンテナ */
+.btnContainer {
+    text-align: center;
+}
+
+/* 中央寄せ用のコンテナ - 2つ並べる場合 */
+.btnContainerList {
+    display: flex;
+    justify-content: center;
+}
+.btnContainerList li {
+    width: 270px;
+}
+.btnContainerList li:first-child {
+    margin-right: 20px;
+}
+
+/* 四角のボタン 青 */
+.squareBtn {
+    display: inline-block;
+    width: 100%;
+    background-color: #001E6F;
+    color: #fff;
+    text-align: center;
+}
+/* 四角のボタン グレー */
+.squareGrayBtn {
+    display: inline-block;
+    width: 100%;
+    background-color: #B1B1B1;
+    padding: 10px 0;
+    color: #fff;
+    text-align: center;
+}
+
+/* 四角のボタン サイズ */
+.btn-large {
+    max-width: 270px;
+    padding: 15px 0;
+}
+.btn-medium {
+    max-width: 150px;
+    padding: 10px 0;
+}
+
+.btn-short {
+    width: 100px;
+    font-size: 16px;
+    padding: 10px 0;
+}
+
+.button-radio input {
+  display:none; 
+}
+
+.button-radio label {
+   color: #000; /* 文字色を黒に */
+   font-size: 14px; /* 文字サイズを14pxに */
+   background-color:#fff;
+   padding:5px 10px;
+   border-radius: 20px; /* 角丸を入れて、左右が丸いボタンにする */
+    border: 1px solid #333; /* 淵の線を指定 */
+ }
+
+.button-radio input[type="radio"]:checked + label { 
+ 	color: #FFF; /* 文字色を白に */
+    background-color: #001E6F;
+}
+
+
+/*/////////////////////////////
+ form - ベース
+/////////////////////////////*/
+.formContainer {
+    display: flex;
+    align-items: center;
+}
+.formContainer.al-item-none {
+    align-items: flex-start;
+    margin-top: 5px;
+}
+.formContainer.mg-ajust-midashi {
+    margin-bottom: 10px;
+}
+.formContainer.mg-ajust,
+.formContainer-add.mg-ajust {
+/*    margin-bottom: 50px; T.N */
+    margin-bottom: 10px;
+}
+.formContainer.bb-ajust,
+.formContainer-add.bb-ajust {
+/*    margin-bottom: 50px; T.N */
+    margin-bottom: 10px;
+/*    padding-bottom: 50px; T.N */
+    padding-bottom: 10px;
+    border-bottom: 1px dotted #484848;
+}
+.formContainer .item-name {
+   width: 150px;
+    margin: 0 10px 0 40px;
+}
+.formContainer .item-name span {
+    margin-left: 10px;
+    color: #001E6F;
+}
+.formContainer .item-input {
+    flex: 1;
+}
+.item-input-row {
+    display: flex;
+    align-items: center;
+}
+.item-input-row .item-input-btn {
+    width: 120px;
+    margin-right: 20px;
+}
+.item-input-note {
+    flex: 1;
+}
+
+/* 新しいメッセージを送るコンテナ */
+.formContainer-message.mg-ajust {
+    margin-bottom: 50px;
+}
+.formContainer-message-inner {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.formContainer-message-inner .item-name {
+    width: 150px;
+}
+.formContainer-message-inner .item-input {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+.formContainer-message-inner .item-input .selectWrap {
+    flex: 1;
+}
+.formContainer-message-inner .messeageBtn {
+    width: 100px;
+    margin-left: 10px;
+}
+
+/* セレクトボックスの横並び用コンテナ */
+.select-item-container {
+    display: flex;
+    flex-direction: column;
+}
+.select-item-column:not(:last-of-type) {
+    margin-bottom: 20px;
+}
+
+/* セレクトボックスの日付等の横並び */
+.select-item-row {
+    display: flex;
+    align-items: center
+}
+.select-item-row .selectWrap:not(:last-of-type),
+.select-item-row .selectStatus {
+    margin-right: 10px;
+}
+.select-item-row .icon-ripple {
+    margin-right: 10px;
+}
+
+/* フォームの追加ボタン用のコンテナ */
+.formContainer-add .item-add {
+    max-width: 100%;
+    margin-top: 30px; 
+    padding-left: 150px; /* 左の見出し分 削除で中央寄せ */
+    /* text-align: center; 中央寄せ 削除でフォームの左に揃う */
+}
+
+
+/*/////////////////////////////
+ input カスタマイズ用
+/////////////////////////////*/
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 7px 10px;
+    background-color: #fff;
+    border: 1px solid #C7C7C7;
+    border-radius: 3px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 3px;
+}
+
+/* セレクトボックス */
+select {
+    display: block;
+    width: 100%;
+    padding: 7px 10px;
+    background-color: #fff;
+    border: 1px solid #C7C7C7;
+    border-radius: 3px;
+}
+.selectWrap {
+    position: relative;
+    display: block;
+}
+.select-no::-ms-expand {
+    display: none;
+}
+.selectWrap::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 0;
+    bottom: 0;
+    width: 5px;
+    height: 5px;
+    margin: auto;
+    border-top: 5px solid #707070;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    pointer-events: none;
+}
+
+/* ラジオボタン横並び */
+.radioList {
+    display: flex;
+    align-items: center;
+}
+.radioList li:not(:last-child) {
+    margin-right: 15px;
+}
+/* チェックボックス横並び */
+.checkboxList {
+    display: flex;
+    align-items: center;
+}
+.checkboxList li:not(:last-child) {
+    margin-right: 30px;
+}
+
+/* 左に20px */
+.ml20 { margin-left: 10px; }
+
+/* サイズを半分にする */
+.harf { 
+    max-width: 50%;
+}
+/* サイズを30%にする */
+.thirty { 
+    max-width: 30%;
+}
+/* サイズを70%にする */
+.seventy { 
+    max-width: 70%;
+}
+
+/* サイズを100pxにする */
+.hundred { 
+    width: 100px;
+}
+
+/* サイズを130pxにする */
+.hundred-thirty { 
+    width: 130px;
+}
+
+/* 地図アイコン*/
+.mapIcon {
+    position: relative;
+    padding-left: 15px;
+}
+.mapIcon::before {
+    content: "";
+    position: absolute;
+    top: calc(50% - 5px);
+    left: 0px;
+    width: 10px;
+    height: 10px;
+    padding-left: 10px;
+    background: url(../../images/icon-map.png) no-repeat center center;
+    background-size: contain;
+}
+
+
+/*/////////////////////////////
+ 正式応募
+/////////////////////////////*/
+.tblCaption {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #B1B1B1;
+}
+.tblCaptionTitle {
+    font-size: 20px;
+}
+.tblCaptionList {
+    display: flex;
+}
+.tblCaptionList li:not(:last-child) {
+    margin-right: 20px;
+}
+.tblCaptionList li a {
+    font-size: 12px;
+    text-decoration: underline;
+}
+
+.containerTblUserInfo.mb-ajust {
+    margin-bottom: 50px;
+}
+.tblUserInfo  {
+    width: 100%;
+}
+.tblUserInfo th {
+    background-color: #F5F5F5;
+    font-weight: bold;
+    text-align: left;
+}
+.tblUserInfo td {
+    margin-bottom: 10px;
+	padding-left:10px;
+}
+
+
+.tbl-Warranty  {
+    width: 90%;
+    margin:auto;
+}
+.tbl-Warranty th {
+    font-weight: normal;
+    text-align: left;
+}
+.tbl-Warranty td {
+    margin-bottom: 10px;
+}
+
+.tbl-Warranty th:nth-child(1) {
+	width: 20%;
+}
+.tbl-Warranty th:nth-child(2) {
+	width: auto;
+}
+
+.tbl-Warranty th, .tbl-Warranty td {
+    padding: 10px 10px;
+	border: 1px #fffff solid;
+}
+
+
+.tbl-Warranty2  {
+    width:90%;
+    margin:auto;
+}
+.tbl-Warranty2 th {
+    font-weight: normal;
+    text-align: left;
+}
+.tbl-Warranty2 td {
+    margin-bottom: 10px;
+}
+
+
+.tbl-Warranty2 th, .tbl-Warranty2 td {
+    padding: 10px 10px;
+	border: 1px #fffff solid;
+}
+
+
+/*/////////////////////////////
+ ユーザー詳細
+/////////////////////////////*/
+
+.status span {
+    padding: 3px 8px;
+    border-radius: 10px;
+}
+.status .on { 
+    border: 1px solid #707070;
+}
+.status .off { 
+    background-color: #707070;
+    color: #fff;
+}
+

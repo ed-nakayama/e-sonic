@@ -1,0 +1,21 @@
+/*概要等のタイトル*/
+
+.three_quarter h1 {
+	border-bottom: solid 3px #ccc;
+}
+.three_quarter h2 {
+	border-bottom: solid 3px #ccc;
+}
+.three_quarter h2.headline {
+	border: none;
+	font-size: 1.5em;
+	color: #4A6382;
+	font-weight: bolder;
+}
+
+
+/*区切り線*/
+
+.three_quarter .line{
+	border-bottom: 1px dotted #ccc;
+}
