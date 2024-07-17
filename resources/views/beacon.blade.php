@@ -109,22 +109,34 @@
 				<img src="/lp/beacon/images/item01.png" alt="製品画像">
 				<div class="order-text">
 					<h4>指向性超音波ビーコン</h4>
-					<p class="price">13,800円/台（税抜）台数割引あり</p>
+					<p class="price">13,800円/台（税抜）</p>
 					<p class="spec">
 						・ベース周波数 40kHz<br>
 						・想定設置位置：天井 およそ５ｍ<br>
 						・スマートフォンまたはタブレットで信号受信<br>
-						・音圧アップのカスタマイズ可能
+						・別途 音圧アップのカスタマイズ可能
 					</p>
 					<br>
-					<p class="price">お試しセット（最小構成）111,600円（税抜）</p>
+					<h4>SDKおよびランタイム ライセンス</h4>
+					<p class="price">84,000円/台（税抜）</p>
 					<p class="spec">
-					・指向性超音波ビーコン 2台（追加購入可）<br>
-					・SDKおよびランタイム Android版、iOS版のいずれか<br>
-					・サンプルアプリ (Android版 または iOS版)<br>
-					・ID書き換えプログラム (Windows版)<br>
-					・受信ID確認アプリ (Android版)<br>
-					・各種ドキュメント
+						・SDKおよびランタイム Android版、iOS版のいずれか<br>
+						　（別途 Windows版も可能）
+					</p>
+					<br>
+					<h4>その他付属品</h4>
+					<p class="spec">
+						・サンプルアプリ (Android版 または iOS版)<br>
+						・ID書き換えプログラム (Windows版)<br>
+						・受信ID確認アプリ (Android版)<br>
+						・各種ドキュメント
+					</p>
+					<br>
+					<h4>お試しセット（最小構成）</h4>
+					<p class="price">111,600円（税抜）</p>
+					<p class="spec">
+						・指向性超音波ビーコン 2台（別途 追加購入可）<br>
+						・SDKおよびランタイム Android版、iOS版のいずれか<br>
 					</p>
 				</div>
 			</div>
