@@ -38,12 +38,19 @@
     </div>
 </div>
 
-    <section id="about" class="content-section">
+
+    <section id="about" class="content-section" style="position: relative;">
+		<div style="font-size:1.2rem;width:100%;text-align:right;position: absolute;top:-10px;">
+			<a href="https://sensait.jp/16176/" style="text-decoration:none;border-bottom: 1px solid;">「超音波屋内位置測位技術(1)」</a><br>
+			<a href="https://sensait.jp/16198/" style="text-decoration:none;border-bottom: 1px solid;">「超音波屋内位置測位技術(2)」</a>
+		</div>
         <h2>指向性超音波ビーコンとは</h2>
         <div class="content">
 			指向性超音波ビーコンは、超音波を使った位置測位の技術です。一般的に普及するiBeaconやwi-fi方式と比べ、高い精度を誇り、また国内でも国外でも法規制にかからないことを初め、さまざまな点でメリットがあり、その活用方法は
         </div>
     </section>
+
+
 	
 <section id="comparison-table">
     <table>
@@ -94,7 +101,7 @@
 			<li>装置関連のWeb、スマホアプリ等、ソフトウェア開発も可能</li>
 		</ul>
 	</section>
-	
+
 	<section id="order">
 		<h2>製品タイプ／価格</h2>
 		<div class="order-block">
@@ -125,7 +132,7 @@
 		<a href="#contact" class="button">お問合せはこちら</a>
 	</section>
 	
-<section id="features">
+	<section id="features">
     <h2>指向性超音波ビーコンの優位性</h2>
     <div class="feature-box">
         <div class="feature-inner">

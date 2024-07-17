@@ -161,6 +161,12 @@
                   　<b><font color="red">事務所移転</font>しました。</b><br><br>
                 <figcaption>2021/07/01<br>
                   　<b><font color="red">電話番号が変更</font>になりました。</b><br><br>
+
+                <figcaption>2021/03/02<br>
+                  　<b><font color="red">センサイト・プロジェクト</font>に寄稿。</b><br>
+                  <b>　　<a href="https://sensait.jp/16176/" style="text-decoration:underline;">「超音波屋内位置測位技術(1)」</u></a></b><br>
+                  <b>　　<a href="https://sensait.jp/16198/" style="text-decoration:underline;">「超音波屋内位置測位技術(2)」</u></a></b><br>
+				<br>
                 <figcaption>2020/03/09<br>
                   　<b><font color="red">「指向性超音波スピーカー／ライト」<br>
                   　　　販売開始！　<b>コスト重視！</b></font><br><br>
@@ -178,7 +184,7 @@
                   　　ただいま製作中！<br>
                   　　9月下旬～10月上旬に販売開始予定！<br><br>
                 <figcaption>2019/06/19～21<br>
-                  <b>「<a href="/casestudy_case02.php"><u>第7回 看板・ディスプレイ EXPO【夏】(旧称：店舗販促EXPO)</u></a></b>」に出展しました。<br>
+                  <b>「<a href="/casestudy/case02"><u>第7回 看板・ディスプレイ EXPO【夏】(旧称：店舗販促EXPO)</u></a></b>」に出展しました。<br>
                    会期： 2019年6月19日(水)～21日(金)<br>
                    会場： 東京ビッグサイト
                   <br><br>
