@@ -118,7 +118,7 @@
 					</p>
 					<br>
 					<h4>SDKおよびランタイム ライセンス</h4>
-					<p class="price">84,000円/台（税抜）</p>
+					<p class="price">84,000円/OS（税抜）</p>
 					<p class="spec">
 						・SDKおよびランタイム Android版、iOS版のいずれか<br>
 						　（別途 Windows版も可能）
