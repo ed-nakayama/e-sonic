@@ -46,14 +46,14 @@
 								<th align="left" width="50%">【部署】</th>
 							</tr>
 							<tr>
-								<td>{{ $customer->unit_name }} </td>
+								<td>{{ $customer->unit_name }}</td>
 							</tr>
 
 							<tr>
 								<th align="left" width="50%">【ご担当者】</th>
 							</tr>
 							<tr>
-								<td>{{ $customer->person_name }} </td>
+								<td>{{ $customer->person_name }}&nbsp;&nbsp;&nbsp;&nbsp;様</td>
 							</tr>
 
 							<tr>

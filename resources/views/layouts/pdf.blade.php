@@ -75,10 +75,6 @@ body {
 
     <main class="main">
 
-		<div class="logos">
-    		<div class="bg"></div>
-		</div>
-
         <div class="mainContents">
             @yield('content')
         </div>
@@ -88,7 +84,6 @@ body {
 			<tr>
 				<td style="width: 45%;"></td>
 				<td style="width: 8%;vertical-align:top;">
-{{--					<img src="images/logo_e.png" alt="イーソニック">--}}
 				</td>
 				<td>
 					〒 151-0053<br>
