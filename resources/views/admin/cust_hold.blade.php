@@ -66,8 +66,9 @@
 							<th>製品シリアル</th><th>請求No.</th><th colspan="4">備考</th>
 						</tr>
                                
-						{{ Form::open(['url' => '/admin/cust/hold/save', 'name' => 'newform' ,'method' => 'post' ]) }}
-						{{ Form::hidden('new_cust_id', $customer->id) }}
+						{{ html()->form('POST', '/admin/cust/hold/save')->attribute('name', 'newform')->open() }}
+						{{ html()->hidden('new_cust_id', $customer->id) }}
+
 						<tr>
 							<td>
 								<div class="selectWrap"  style="text-align:left;">
@@ -99,7 +100,7 @@
 								<textarea class="form-mt" name="new_comment" id="" cols="30" rows="1"  placeholder="備考">{{ old('new_comment') }}</textarea>
 							</td>
 						</tr>
-						{{ Form::close() }}
+						{{ html()->form()->close() }}
 
 					</table>
 
@@ -113,9 +114,9 @@
 						</tr>
                                
 						@foreach ($prodList as $list)
-							{{ Form::open(['url' => '/admin/cust/hold/save', 'name' => 'saveform' .  $list->id ,'method' => 'post' ]) }}
-							{{ Form::hidden('cust_id', $customer->id) }}
-							{{ Form::hidden('prod_list_id', $list->id) }}
+							{{ html()->form('POST', '/admin/cust/hold/save')->attribute('saveform' .  $list->id)->open() }}
+							{{ html()->hidden('cust_id', $customer->id) }}
+							{{ html()->hidden('prod_list_id', $list->id) }}
 							<tr>
 
 								<td>
@@ -149,7 +150,7 @@
 								</td>
 								<td><input type="checkbox" name="del_flag" value="1">削除</td>
 							</tr>
-							{{ Form::close() }}
+							{{ html()->form()->close() }}
 
 						@endforeach
 

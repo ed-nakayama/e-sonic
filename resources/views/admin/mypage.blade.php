@@ -28,17 +28,17 @@
                                
 						@foreach ($custList as $cust)
 							<tr>
-								{{ Form::open(['url' => '/admin/cust/edit', 'name' => 'supform' .  $cust->id ,'method' => 'get' ]) }}
-								{{ Form::hidden('cust_id', $cust->id) }}
-								{{ Form::close() }}
+								{{ html()->form('GET', '/admin/cust/edit')->attribute('name', 'supform' . $cust->id)->open() }}
+								{{ html()->hidden('cust_id', $cust->id) }}
+								{{ html()->form()->close() }}
 
-								{{ Form::open(['url' => '/admin/cust/hold', 'name' => 'holdform' .  $cust->id ,'method' => 'get' ]) }}
-								{{ Form::hidden('cust_id', $cust->id) }}
-								{{ Form::close() }}
+								{{ html()->form('GET', '/admin/cust/hold')->attribute('name', 'holdform' .  $cust->id)->open() }}
+								{{ html()->hidden('cust_id', $cust->id) }}
+								{{ html()->form()->close() }}
 
-								{{ Form::open(['url' => '/admin/cust/guide', 'name' => 'guideform' .  $cust->id ,'method' => 'post' ]) }}
-								{{ Form::hidden('cust_id', $cust->id) }}
-								{{ Form::close() }}
+								{{ html()->form('POST', '/admin/cust/guide')->attribute('name', 'guideform' .  $cust->id)->open() }}
+								{{ html()->hidden('cust_id', $cust->id) }}
+								{{ html()->form()->close() }}
 
 								<td>{{ $cust->id }}</td>
 								<td>{{ $cust->name }}</td>

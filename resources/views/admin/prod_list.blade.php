@@ -38,8 +38,8 @@
 						</tr>
                                
 						<tr>
-							{{ Form::open(['url' => '/admin/product/store', 'name' => 'newform' ,'method' => 'post' ]) }}
-							{{ Form::hidden('id', '') }}
+							{{ html()->form('POST', '/admin/product/store')->attribute('name', 'newform')->open() }}
+							{{ html()->hidden('id', '') }}
 							<td>
 								<div class="selectWrap"  style="text-align:left;">
 									<select name="prod_type"  id="prod_type" class="select-no">
@@ -73,13 +73,13 @@
 
 						<tr>
 							<td colspan="5"><input type="text" name="dl_url" value="{{ old('dl_url') }}"  placeholder="Download URL"></td><td></td>
-							{{ Form::close() }}
+							{{ html()->form()->close() }}
 						</tr>
 
 					</table>
 
 {{-- 検索領域 --}}
-					{{ Form::open(['url' => '/admin/product', 'name' => 'searchform' ,'method' => 'post' ]) }}
+					{{ html()->form('POST', '/admin/product')->attribute('name', 'searchform')->open() }}
 					<div style="display:flex;font-size: 12px;">
 						<div style="padding: 10px 10px;">
 							製品タイプ
@@ -105,7 +105,7 @@
 						</div>
 						　<a href="javascript:searchform.submit()" class="squareBtn btn-medium" style="width: 70px;">検索</a>
 					</div>
-					{{ Form::close() }}
+					{{ html()->form()->close() }}
 					<br>
 
 @if(isset($prodList[0]))
@@ -119,10 +119,10 @@
                                
 						@foreach ($prodList as $list)
 							<tr>
-								{{ Form::open(['url' => '/admin/product/store', 'name' => 'saveform' .  $list->id ,'method' => 'post' ]) }}
-								{{ Form::hidden('id', $list->id) }}
-								{{ Form::hidden('search_prod_type', $search_prod_type) }}
-								{{ Form::hidden('search_cat_id', $search_cat_id) }}
+								{{ html()->form('POST', '/admin/product/store')->attribute('saveform' .  $list->id)->open() }}
+								{{ html()->hidden('id', $list->id) }}
+								{{ html()->hidden('search_prod_type', $search_prod_type) }}
+								{{ html()->hidden('search_cat_id', $search_cat_id) }}
 								<td>
 									<div class="selectWrap"  style="text-align:left;">
 										<select name="prod_type"  id="prod_type" class="select-no">
@@ -155,7 +155,7 @@
 							<tr>
 								<td colspan="5"><input type="text" name="dl_url" value="{{ old('dl_url' ,$list->dl_url) }}"></td>
 								<td align="center"><input type="checkbox" name="del_flag" value="1">削除</td>
-								{{ Form::close() }}
+								{{ html()->form()->close() }}
 							</tr>
 						@endforeach
 

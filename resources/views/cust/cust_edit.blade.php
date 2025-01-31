@@ -18,7 +18,8 @@
                
 		<div class="containerContents">
 
-			{{ Form::open(['url' => '/cust/mypage/store', 'name' => 'regform' , 'id' => 'regform', 'files' => true]) }}
+			{{ html()->form('POST', '/cust/mypage/store')->attribute('name', 'regform')->open() }}
+
 			<section class="secContents-mb">
 				<div class="secContentsInner">
                             
@@ -83,7 +84,7 @@
 					</div><!-- /.btn-container -->
 				</div><!-- /.secContentsInner -->
 			</section><!-- /.secContents -->
-			{{ Form::close() }}
+			{{ html()->form()->close() }}
                     
 		 </div><!-- /.containerContents -->
 

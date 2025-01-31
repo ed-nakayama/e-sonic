@@ -73,7 +73,7 @@
 						</div><!-- /.item-input -->
 					</div>
 
-					{{ Form::close() }}
+					{{ html()->form()->close() }}
 
 				</div><!-- /.secContentsInner -->
 			</section><!-- /.secContents-mb -->

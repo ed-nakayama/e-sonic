@@ -81,10 +81,11 @@
 							<p>メールアドレス</p>
 						</div><!-- /.item-name -->
 						<div class="item-input">
-							{{ Form::open(['url' => '/cust/email/change', 'name' => 'mailform' , 'id' => 'mailform']) }}
+							{{ html()->form('POST', '/cust/email/change')->id('mailform')->attribute('name', 'mailform')->open() }}
+
 							{{ csrf_field() }}
 							{{ $customer->email }}　　　　　　　　　新メールアドレス　<input type="text" name="email" value="" style="width: 300px;"> <a href="javascript:mailform.submit()" class="squareBtn btn-medium" style="width: 70px;height: 40px;">変更</a>
-							{{ Form::close() }}
+							{{ html()->form()->close() }}
 
 						<div class="item-input">
 							@error('email')
@@ -124,21 +125,21 @@
                                
 						@foreach ($prodList as $prod)
 							<tr>
-								{{ Form::open(['url' => '/cust/spec', 'name' => 'specform' .  $prod->id ,'method' => 'post' ]) }}
-								{{ Form::hidden('prod_list_id', $prod->id) }}
-								{{ Form::close() }}
+								{{ html()->form('POST', '/cust/spec')->attribute('name', 'specform' .  $prod->id)->open() }}
+								{{ html()->hidden('prod_list_id', $prod->id) }}
+								{{ html()->form()->close() }}
 
-								{{ Form::open(['url' => '/cust/repair', 'name' => 'supform' .  $prod->id ,'method' => 'get' ]) }}
-								{{ Form::hidden('prod_list_id', $prod->id) }}
-								{{ Form::close() }}
+								{{ html()->form('GET', '/cust/repair')->attribute('name', 'supform' .  $prod->id )->open() }}
+								{{ html()->hidden('prod_list_id', $prod->id) }}
+								{{ html()->form()->close() }}
 
-								{{ Form::open(['url' => '/cust/warranty', 'name' => 'warrantyform' .  $prod->id ,'method' => 'post' ,'target' => '_blank' ]) }}
-								{{ Form::hidden('prod_list_id', $prod->id) }}
-								{{ Form::close() }}
+								{{ html()->form('GET', '/cust/warranty')->attribute('name',  'warrantyform' .  $prod->id )->open() }}
+								{{ html()->hidden('prod_list_id', $prod->id) }}
+								{{ html()->form()->close() }}
 
-								{{ Form::open(['url' => '/cust/license', 'name' => 'licenseform' .  $prod->id ,'method' => 'post'  ,'target' => '_blank']) }}
-								{{ Form::hidden('prod_list_id', $prod->id) }}
-								{{ Form::close() }}
+								{{ html()->form('GET', '/cust/license')->attribute('name', 'licenseform' .  $prod->id)->target('_blank')->open() }}
+								{{ html()->hidden('prod_list_id', $prod->id) }}
+								{{ html()->form()->close() }}
 
 								<td>{{ $prod->prod_name }}</td>
 								<td>{{ $prod->buy_date }}</td>
@@ -151,12 +152,12 @@
 									<div class="btnContainer"  id="{{ 'spec' . $prod->id }}">
 										@if (!empty($prod->dl_url))
 											@if ($prod->secure_flag == '1')
-												{{ Form::open(['url' => '/cust/download/secure', 'name' => 'regform' . $prod->id , 'id' => 'regform' . $prod->id ]) }}
+												{{ html()->form('POST', '/cust/download/secure')->id('regform' . $prod->id )->attribute('name', 'regform' .  $prod->id)->open() }}
 											@else
-												{{ Form::open(['url' => '/cust/download/pub', 'name' => 'regform' . $prod->id , 'id' => 'regform' . $prod->id ]) }}
+												{{ html()->form('POST', '/cust/download/pub')->id('regform' . $prod->id )->attribute('name', 'regform' .  $prod->id)->open() }}
 											@endif
-											{{ Form::hidden('file_path', $prod->dl_url) }}
-											{{ Form::close() }}
+											{{ html()->hidden('file_path', $prod->dl_url) }}
+											{{ html()->form()->close() }}
 											<a href="javascript:regform{{ $prod->id }}.submit()" class="squareBtn btn-medium" style="width: 90px;">ダウンロード</a>
 										@endif
 									</div><!-- /.btn-container -->

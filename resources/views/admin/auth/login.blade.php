@@ -63,7 +63,7 @@
 					</div>
 
 					<br>
-					{{ Form::close() }}
+					{{ html()->form()->close() }}
 
 				</div><!-- /.secContentsInner -->
 			</section><!-- /.secContents-mb -->

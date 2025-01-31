@@ -18,8 +18,8 @@
                
 		<div class="containerContents">
 
-			{{ Form::open(['url' => '/cust/repair/send', 'name' => 'regform' , 'id' => 'regform', 'files' => true]) }}
-			{{ Form::hidden('prod_list_id', old('prod_list_id', $prodList->id) ) }}
+			{{ html()->form('POST', '/cust/repair/send')->id('regform')->attribute('name', 'regform')->open() }}
+			{{ html()->hidden('prod_list_id', old('prod_list_id', $prodList->id) ) }}
 			<section class="secContents-mb">
 				<div class="secContentsInner">
                             
@@ -166,7 +166,7 @@
 					</div><!-- /.btn-container -->
 				</div><!-- /.secContentsInner -->
 			</section><!-- /.secContents -->
-			{{ Form::close() }}
+			{{ html()->form()->close() }}
                     
 		 </div><!-- /.containerContents -->
 
