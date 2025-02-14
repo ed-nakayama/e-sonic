@@ -114,7 +114,7 @@
 						</tr>
                                
 						@foreach ($prodList as $list)
-							{{ html()->form('POST', '/admin/cust/hold/save')->attribute('saveform' .  $list->id)->open() }}
+							{{ html()->form('POST', '/admin/cust/hold/save')->attribute('name', 'saveform' .  $list->id)->open() }}
 							{{ html()->hidden('cust_id', $customer->id) }}
 							{{ html()->hidden('prod_list_id', $list->id) }}
 							<tr>
