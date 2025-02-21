@@ -129,15 +129,17 @@
 		<div class="order-block">
 			<h3>博物館など屋内使用に最適！</h3>
 			<div class="order-content">
-				<img src="/lp/parametric/images/item02.png" alt="製品画像">
+				<img src="parametric_images/IMG_1759_R_C.JPG" alt="parametric">
 				<div class="order-text">
-					<h4>指向性超音波スピーカー／標準コンパクトタイプ</h4>
+				 	<span style=" color:#ffffff; background-color:#ff0000; padding:2px 2px 2px 2px">NEW</span>
+					<h4>指向性超音波スピーカー／標準コンパクトタイプ V2</h4>
 					<p class="price">120,000円</p>
 					<p class="spec">
 						・サイズ：150×150×32mm<br>
-						・電圧：DC 19V（12V～19Vの範囲内であれば可能）<br>
-						・消費電力：およそ12W<br>
-						・超音波素子数：37個<br>
+						・重量：420g<br>
+						・電圧：DC 12V（12V～19Vの範囲内であれば可能）<br>
+						・消費電力：およそ6W<br>
+						・超音波素子数：61個<br>
 						・入力プラグ：3.5mm ステレオプラグ<br>
 						・国内超音波素子使用<br>
 					</p>
