@@ -11,6 +11,28 @@
 
 </head>
 
+<style>
+/* 点滅 */
+.blinking{
+	-webkit-animation:blink 1.5s ease-in-out infinite alternate;
+    -moz-animation:blink 1.5s ease-in-out infinite alternate;
+    animation:blink 0.5s ease-in-out infinite alternate;
+}
+@-webkit-keyframes blink{
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+@-moz-keyframes blink{
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+@keyframes blink{
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+</style>
+
+
 <div class="main-visual">
     <video autoplay muted loop>
         <source src="/lp/parametric/videos/mv.mp4" type="video/mp4">
@@ -126,12 +148,13 @@
 				</div>
 			</div>
 		</div>
+
 		<div class="order-block">
 			<h3>博物館など屋内使用に最適！</h3>
 			<div class="order-content">
 				<img src="parametric_images/IMG_1759_R_C.JPG" alt="parametric">
 				<div class="order-text">
-				 	<span style=" color:#ffffff; background-color:#ff0000; padding:2px 2px 2px 2px">NEW</span>
+					<span  class="blinking" style="color:#ffffff; background-color:#ff0000; padding:2px 2px 2px 2px">NEW</span>
 					<h4>指向性超音波スピーカー／標準コンパクトタイプ V2</h4>
 					<p class="price">120,000円</p>
 					<p class="spec">
@@ -146,6 +169,31 @@
 				</div>
 			</div>
 		</div>
+
+		<div class="order-block">
+			<h3>雑多な屋内使用に最適！</h3>
+			<div class="order-content">
+				<img src="parametric_images/IMG_1767_R_C.JPG" alt="parametric">
+				<div class="order-text">
+					<span  class="blinking" style="color:#ffffff; background-color:#ff0000; padding:2px 2px 2px 2px">NEW</span>
+					<h4>指向性超音波スピーカー／ミドルタイプ（注文生産）</h4>
+					<p class="price">320,000円</p>
+					<p class="spec">
+						・サイズ：スピーカー部 320 × 115×50mm<br>
+						　　　　　アンプ部 106 × 200 × 61.1mm<br>
+						・重量：スピーカー部 1.2kg／アンプ部 750g<br>
+						・電圧：DC 12V（12V～19Vの範囲内であれば可能）<br>
+						・消費電力：およそ65W<br>
+						・超音波素子数：307個<br>
+						・入力プラグ：3.5mm ステレオプラグ／RCA プラグ<br>
+						・国内超音波素子使用<br>
+					</p>
+				</div>
+			</div>
+		</div>
+
+
+
 		<a href="#contact" class="button">お問合せはこちら</a>
 	</section>
 	

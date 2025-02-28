@@ -73,7 +73,22 @@
              </div>
                <b>本体価格：120,000円(税抜)</b>
              <a href="/storage/parametric_doc/parametoric_compact_V2_spec.pdf" target="_blank"><br><u>指向性超音波スピーカー<br>/標準コンパクトタイプ V2 基本仕様</u></a>
+             <br><br><br>
+
+               <img src="parametric_images/IMG_1767_R_C.JPG" alt="parametric"  style="width: 85%; height: auto;"><br><br>
+				<span  class="blinking" style="color:#ffffff; background-color:#ff0000; padding:2px 2px 2px 2px">NEW</span>
+               <font size="4" color="red"><b>指向性超音波スピーカー<br>　　　　／ミドルタイプ（受注生産）」</b></font><br>
+               <div style="text-align: left;">
+               <b>国産超音素子の数307個のミッドレンジの指向性超音波スピーカーを発売！可聴音域で、音圧80dB超をを実現。<br>
+                  何といっても品質の国産の超音波素子！VESAで固定可能。<br>
+                  オプションでカスタマイズ対応可能。<br>
+                  （スタンドは付属しません。）
+               </b><br>
+             </div>
+               <b>本体価格：320,000円(税抜)</b>
+             <a href="/storage/parametric_doc/parametric_middle_spec.pdf" target="_blank"><br><u>指向性超音波スピーカー<br>/ミドルタイプ 基本仕様</u></a>
              <br><br>
+
                <div style="text-align: left;">
                <font size="3" color="red">騒音下での利用目的に超音波素子を増やしたカスタマイズ品の要望が増えています。</font>
              </div>
