@@ -119,7 +119,7 @@
                                
 						@foreach ($prodList as $list)
 							<tr>
-								{{ html()->form('POST', '/admin/product/store')->attribute('saveform' .  $list->id)->open() }}
+								{{ html()->form('POST', '/admin/product/store')->attribute('name', 'saveform' .  $list->id)->open() }}
 								{{ html()->hidden('id', $list->id) }}
 								{{ html()->hidden('search_prod_type', $search_prod_type) }}
 								{{ html()->hidden('search_cat_id', $search_cat_id) }}
