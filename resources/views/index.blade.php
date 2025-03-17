@@ -190,6 +190,10 @@
           <ul class="nospace spacing clear">
             <li>
               <figure class="clear">
+                <figcaption>20225/03/17<br>
+                  　<b><font color="red">「指向性超音波スピーカー<br>　　／ミドルタイプ（受注生産）」　販売開始！</font></b><br>
+                  　　<b>国産素子307個を使用したミッドレンジの指向性超音波スピーカー！ちょっと騒がしい室内での使用に最適！</b><br><br>
+
                 <figcaption>20225/02/20<br>
                   　<b><font color="red">「指向性超音波スピーカー<br>　　／標準コンパクトタイプ V2」　販売開始！</font></b><br>
                   　　<b>従来の国産素子を37個から61個に増量で価格据え置き！</b><br><br>
