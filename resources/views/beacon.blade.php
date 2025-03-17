@@ -115,7 +115,7 @@
 						・想定設置位置：天井 およそ５ｍ<br>
 						・スマートフォンまたはタブレットで信号受信<br>
 						・別途 音圧アップのカスタマイズ可能<br>
-						＞＞＞ <a href="/storage/beacon_doc/beacon_spec.pdf" target="_blank">指向性超音波ビーコン 基本仕様</a>
+						＞＞＞ <a href="beacon_doc/beacon_spec.pdf" target="_blank">指向性超音波ビーコン 基本仕様</a>
 					</p>
 					<br>
 					<h4>SDKおよびランタイム ライセンス</h4>

@@ -52,7 +52,7 @@
               </td>
               <td>
               		<font size="4" color="red">レンタルもしています。</font><br><br>
-					<a href="/storage/parametric_doc/rental_price_list_20250317.pdf" target="_blank"><u>指向性超音波スピーカー レンタル価格表</u></a><br><br>
+					<a href="parametric_doc/rental_price_list_20250317.pdf" target="_blank"><u>指向性超音波スピーカー レンタル価格表</u></a><br><br>
               </td>
               </tr>
 			</table>
@@ -72,7 +72,7 @@
                国産の超音波素子の採用により、価格は上がってしまいますが、音質は従来品よりよくなっています。</b><br>
              </div>
                <b>本体価格：120,000円(税抜)</b>
-             <a href="/storage/parametric_doc/parametoric_compact_V2_spec.pdf" target="_blank"><br><u>指向性超音波スピーカー<br>/標準コンパクトタイプ V2 基本仕様</u></a>
+             <a href="parametric_doc/parametoric_compact_V2_spec.pdf" target="_blank"><br><u>指向性超音波スピーカー<br>/標準コンパクトタイプ V2 基本仕様</u></a>
              <br><br><br>
 
                <img src="parametric_images/IMG_1767_R_C.JPG" alt="parametric"  style="width: 85%; height: auto;"><br><br>
@@ -86,7 +86,7 @@
                </b><br>
              </div>
                <b>本体価格：320,000円(税抜)</b>
-             <a href="/storage/parametric_doc/parametric_middle_spec.pdf" target="_blank"><br><u>指向性超音波スピーカー<br>/ミドルタイプ 基本仕様</u></a>
+             <a href="parametric_doc/parametric_middle_spec.pdf" target="_blank"><br><u>指向性超音波スピーカー<br>/ミドルタイプ 基本仕様</u></a>
              <br><br>
 
                <div style="text-align: left;">
@@ -104,7 +104,7 @@
                <font size="4" color="red"><b>「指向性超音波スピーカー<br>　　　　　　　／ライトタイプ）」</b></font><br>
                <B>コスト重視！Web会議にピッタリ！</b><br>
                <B>本体価格：70,000円(税抜)</b>
-              <a href="/storage/parametric_doc/parametoric_light_spec.pdf" target="_blank"><br><u>指向性超音波スピーカー/ライトタイプ 基本仕様</u></a><br><br>
+              <a href="parametric_doc/parametoric_light_spec.pdf" target="_blank"><br><u>指向性超音波スピーカー/ライトタイプ 基本仕様</u></a><br><br>
 --}}
 			<img src="parametric_images/IMG_1760_R_C.JPG" alt="parametric"  style="width: 80%; height: auto;"><br><br>
 			<font size="4" color="red"><b>「指向性超音波スピーカー／標準タイプ」</b></font>
@@ -112,15 +112,15 @@
 			<b>海外製の超音波素子38個 直径16mmタイプで、10mm超音波素子より少ない個数で同等の音圧が得られます！</b><br>
 			</div>
 			<b>本体価格：100,000円(税抜)</b>
-			<a href="/storage/parametric_doc/parametoric_standard_spec.pdf" target="_blank"><br><u>指向性超音波スピーカー/標準タイプ 基本仕様</u></a>
+			<a href="parametric_doc/parametoric_standard_spec.pdf" target="_blank"><br><u>指向性超音波スピーカー/標準タイプ 基本仕様</u></a>
 			<br><br><br>
 
               <img src="parametric_images/IMG_0447_R.JPG" alt="parametric"  style="width: 90%; height: auto;"><br><br>
                <font size="4" color="red"><b>「指向性超音波スピーカー<br>　　　　　　　／音圧アップタイプ）」</b></font><br>
                <font size="3">受注生産</font><br>
                <font size="3">特許第6707242号（特願2019-176180）</font>
-             <a href="/storage/parametric_doc/parametoric_spl_up_spec.pdf" target="_blank"><br><u>指向性超音波スピーカー/音圧タイプ 基本仕様</u></a>
-<!--             <a href="/storage/parametric_doc/parametoric_spl_up_mk2_spec.pdf" target="_blank"><br><u>指向性超音波スピーカー/音圧タイプMKⅡ 基本仕様</u></a>-->
+             <a href="parametric_doc/parametoric_spl_up_spec.pdf" target="_blank"><br><u>指向性超音波スピーカー/音圧タイプ 基本仕様</u></a>
+<!--             <a href="parametric_doc/parametoric_spl_up_mk2_spec.pdf" target="_blank"><br><u>指向性超音波スピーカー/音圧タイプMKⅡ 基本仕様</u></a>-->
 <br>
 <!--               <font size="5" color="red"><b>販売中！</b></font>-->
                <br><br>
@@ -128,7 +128,7 @@
 
               <table style="border-style: none; margin-left: 20px;">
               <tr><td>
-              <a href="/storage/parametric_doc/parametric2.pdf" target="_blank"><br><u>指向性超音波スピーカー</u></a><br>
+              <a href="parametric_doc/parametric2.pdf" target="_blank"><br><u>指向性超音波スピーカー</u></a><br>
               ・日本の大手自動車部品メーカーのライセンスを受けて製造／販売しています。<br>
               ・筐体は別途有償にてカスタマイズ可能です。<br>
               ・筐体無しの販売も可能です。<br>
@@ -142,8 +142,8 @@
 
               <img src="beacon_images/IMG_0399_R4.png" alt="SonicBeacon" style="width: 50%; height: auto;"><br><br>
               <font size="4"><font size="4" color="red"><b>「指向性超音波ビ－コン」</b></font></font><br>
-              <a href="/storage/beacon_doc/beacon_spec.pdf" target="_blank"><u>指向性超音波ビーコン 基本仕様</u></a><br>
-              <a href="/storage/beacon_doc/sonic_beacon_jirei.pdf" target="_blank"><br><u>特徴＆想定利用事例</u></a><br><br>
+              <a href="beacon_doc/beacon_spec.pdf" target="_blank"><u>指向性超音波ビーコン 基本仕様</u></a><br>
+              <a href="beacon_doc/sonic_beacon_jirei.pdf" target="_blank"><br><u>特徴＆想定利用事例</u></a><br><br>
              <font size="4" color="red">最小構成 お試しセットをご用意！</font><br>
               <table style="border-style: none; margin-left: 20px;">
               <tr><td>
@@ -158,8 +158,8 @@
               </table>
               <table style="border-style: none; margin-left: 20px;">
               <tr><td>
-              <a href="/storage/beacon_doc/sonic_beacon.pdf" target="_blank"><br><u>指向性超音波ビ－コン</u></a>
-              <a href="/storage/beacon_doc/sonic_beacon2.pdf" target="_blank"><u>Newパンフレット</u></a><br>
+              <a href="beacon_doc/sonic_beacon.pdf" target="_blank"><br><u>指向性超音波ビ－コン</u></a>
+              <a href="beacon_doc/sonic_beacon2.pdf" target="_blank"><u>Newパンフレット</u></a><br>
               ・日本の大手自動車部品メーカーのライセンスを受けて製造／販売しています。<br>
               ・設置場所により有償で筐体のカスタマイズも承ります。<br>
               ・自社でアプリ開発をしたいお客様のため、個別販売も対応します。<br>
