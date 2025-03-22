@@ -150,7 +150,9 @@ class MypageController extends Controller
 			$customer = Customer::find($request->cust_id);
 		}
 
-		$product = Product::get();
+		$product = Product::orderBy('prod_type')
+			->orderBy('cat_id')
+			->get();
 
 		$prodList = ProdList::leftJoin('products','prod_lists.product_id','=','products.id')
 			->where('prod_lists.customer_id' ,$customer->id)
