@@ -75,6 +75,10 @@ body {
 
     <main class="main">
 
+		<div class="logos">
+    		<div class="bg"></div>
+		</div>
+
         <div class="mainContents">
             @yield('content')
         </div>
@@ -84,13 +88,14 @@ body {
 			<tr>
 				<td style="width: 45%;"></td>
 				<td style="width: 8%;vertical-align:top;">
+{{--					<img src="images/logo_e.png" alt="イーソニック">--}}
 				</td>
 				<td>
 					〒 151-0053<br>
-					東京都渋谷区代々木 1-21-10<br>
-					インターパーク代々木 4F<br>
+					東京都渋谷区代々木 1-21-12<br>
+					ヤマノ26ビル 5F<br>
 					株式会社 イーソニック<br>
-					サポート　：　https://www.e-sonic.co.jp/cust<br>
+					サポート　：　https://e-sonic.co.jp/cust<br>
 					メール　：　sonic_b@e-sonic.co.jp<br>
 					TEL ： 03-4572-0683<br>
 				</td>

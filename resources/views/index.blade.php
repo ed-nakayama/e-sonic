@@ -190,7 +190,11 @@
           <ul class="nospace spacing clear">
             <li>
               <figure class="clear">
-                <figcaption>20225/03/17<br>
+                <figcaption>2025/04/01<br>
+                  　<b><font color="red">オフィス移転しました！</font></b><br>
+                  　　<b>歩いて数分のところですが．．．</b><br><br>
+
+                <figcaption>2025/03/17<br>
                   　<b><font color="red">「指向性超音波スピーカー<br>　　／ミドルタイプ（受注生産）」　販売開始！</font></b><br>
                   　　<b>国産素子307個を使用したミッドレンジの指向性超音波スピーカー！ちょっと騒がしい室内での使用に最適！</b><br><br>
 
