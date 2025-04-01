@@ -12,7 +12,7 @@
           <tbody>
             <tr>
               <td width="28%" class="col01">名称</td>
-              <td width="72%" class="col02">株式会社イーソニック<br>
+              <td width="72%" class="col02">{{ config('const.comp_name') }}<br>
                 （e-Sonic co.,ltd.）</td>
             </tr>
             <tr>
@@ -30,10 +30,10 @@
             <tr>
               <td class="col01">所在地</td>
               <td>
-              〒151-0053<br>
-              東京都渋谷区代々木 1-21-12<br>
-              ヤマノ26ビル 5F<br>
-              TEL 03-4572-0683<br>
+              〒 {{ config('const.comp_zip') }}<br>
+              {{ config('const.comp_address') }}<br>
+              {{ config('const.comp_bld') }}<br>
+              TEL {{ config('const.comp_tel') }}<br>
               </td>
             </tr>
             <tr>

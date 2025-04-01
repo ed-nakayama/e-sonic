@@ -91,10 +91,10 @@ body {
 {{--					<img src="images/logo_e.png" alt="イーソニック">--}}
 				</td>
 				<td>
-					〒 151-0053<br>
-					東京都渋谷区代々木 1-21-12<br>
-					ヤマノ26ビル 5F<br>
-					株式会社 イーソニック<br>
+					〒 {{ config('const.comp_zip') }}<br>
+					{{ config('const.comp_address') }}<br>
+					{{ config('const.comp_bld') }}<br>
+					{{ config('const.comp_name') }}<br>
 					サポート　：　https://e-sonic.co.jp/cust<br>
 					メール　：　sonic_b@e-sonic.co.jp<br>
 					TEL ： 03-4572-0683<br>

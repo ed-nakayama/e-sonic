@@ -9,9 +9,10 @@
     <div class="three_quarter first">
       <section class="clear">
         <h1>アクセス</h1>
-        <div>株式会社イーソニック<br>
-          東京都渋谷区代々木 1-21-12
-          ヤマノ26ビル 5F<br>
+        <div>{{ config('const.comp_name') }}<br>
+        〒{{ config('const.comp_zip') }}
+          {{ config('const.comp_address') }}
+          {{ config('const.comp_bld') }}<br>
           <br>
           <iframe src="https://maps.app.goo.gl/faS8U8Rc2Pni4BXE8" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
           <br />

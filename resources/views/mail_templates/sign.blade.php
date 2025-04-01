@@ -2,10 +2,10 @@
 「指向性超音波スピーカー」　狙った場所にだけ、音を届ける
 「指向性超音波ビーコン」　高精度測位と3次元識別を実現
 
-株式会社 イーソニック
+{{ config('const.comp_name') }}
 
-＜代々木本社＞
-    151-0053 東京都渋谷区代々木 1-21-12
-　　　　　　　　　　　　　ヤマノ26ビル 5F
-     TEL 03-4572-0683
+{{ config('const.comp_head') }}
+    {{ config('const.comp_zip') }} {{ config('const.comp_address') }}
+　　　　　　　　　　　　　{{ config('const.comp_bld') }}
+     TEL {{ config('const.comp_tel') }}
 ***************************************************************
