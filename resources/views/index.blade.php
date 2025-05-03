@@ -142,7 +142,18 @@
 
               <img src="beacon_images/IMG_0399_R4.png" alt="SonicBeacon" style="width: 50%; height: auto;"><br><br>
               <font size="4"><font size="4" color="red"><b>「指向性超音波ビ－コン」</b></font></font><br>
-              <a href="beacon_doc/beacon_spec.pdf" target="_blank"><u>指向性超音波ビーコン 基本仕様</u></a><br>
+              <a href="beacon_doc/beacon_spec.pdf" target="_blank"><u>指向性超音波ビーコン 基本仕様</u></a><br><br>
+
+              <img src="/lp/beacon/images/IMG_1852_R_C.JPG" alt="SonicBeacon" style="width: 50%; height: auto;"><br><br>
+				<span  class="blinking" style="color:#ffffff; background-color:#ff0000; padding:2px 2px 2px 2px">NEW</span>
+				<font size="4"><font size="4" color="red"><b>「指向性超音波ビ－コン<br>（音圧アップタイプ）」</b></font></font><br>
+				<div style="margin-left: 80px;">
+				<ul style="text-align: left;">
+					<li>超音波素子7個</li>
+					<li>パラメトリック効果</li>
+				</ul>
+				</div>
+
               <a href="beacon_doc/sonic_beacon_jirei.pdf" target="_blank"><br><u>特徴＆想定利用事例</u></a><br><br>
              <font size="4" color="red">最小構成 お試しセットをご用意！</font><br>
               <table style="border-style: none; margin-left: 20px;">
@@ -190,9 +201,8 @@
           <ul class="nospace spacing clear">
             <li>
               <figure class="clear">
-                <figcaption>2025/04/01<br>
-                  　<b><font color="red">オフィス移転しました！</font></b><br>
-                  　　<b>歩いて数分のところですが．．．</b><br><br>
+                <figcaption>2025/04/04<br>
+                  　<b><font color="red">神田にオフィス移転しました！</font></b><br><br>
 
                 <figcaption>2025/03/17<br>
                   　<b><font color="red">「指向性超音波スピーカー<br>　　／ミドルタイプ（受注生産）」　販売開始！</font></b><br>

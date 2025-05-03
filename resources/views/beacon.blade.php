@@ -10,6 +10,28 @@
 
 </head>
 
+<style>
+/* 点滅 */
+.blinking{
+	-webkit-animation:blink 1.5s ease-in-out infinite alternate;
+    -moz-animation:blink 1.5s ease-in-out infinite alternate;
+    animation:blink 0.5s ease-in-out infinite alternate;
+}
+@-webkit-keyframes blink{
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+@-moz-keyframes blink{
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+@keyframes blink{
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+</style>
+
+
 <div class="main-visual">
     <video autoplay muted loop>
         <source src="/lp/beacon/videos/mv1.mp4" type="video/mp4">
@@ -114,7 +136,8 @@
 						・ベース周波数 40kHz<br>
 						・想定設置位置：天井 およそ５ｍ<br>
 						・スマートフォンまたはタブレットで信号受信<br>
-						・別途 音圧アップのカスタマイズ可能<br>
+						・内部電圧 24V または 36V 選択<br>
+						・入力電圧 24V or 5V（オプション）<br>
 						＞＞＞ <a href="beacon_doc/beacon_spec.pdf" target="_blank">指向性超音波ビーコン 基本仕様</a>
 					</p>
 					<br>
@@ -142,6 +165,44 @@
 				</div>
 			</div>
 		</div>
+
+		<div class="order-block">
+			<div class="order-content">
+				<img src="/lp/beacon/images/IMG_1852_R_C.JPG" alt="製品画像">
+				<div class="order-text">
+					<span  class="blinking" style="color:#ffffff; background-color:#ff0000; padding:2px 2px 2px 2px">NEW</span>
+					<h4>指向性超音波ビーコン （音圧アップタイプ）</h4>
+					<p class="price">19,800円/台（税抜）</p>
+					<p class="spec">
+						・超音波素子 7個<br>
+						・パラメトリックによる音圧アップ<br>
+						・内部電圧 24V または 36V 選択<br>
+						・入力電圧 5V～12V<br>
+{{--
+						＞＞＞ <a href="beacon_doc/beacon_spec.pdf" target="_blank">指向性超音波ビーコン 基本仕様</a>
+--}}
+					</p>
+					<br>
+					<h4>SDKおよびランタイム ライセンス</h4>
+					<p class="spec">
+						上記と共通
+					</p>
+					<br>
+					<h4>その他付属品</h4>
+					<p class="spec">
+						上記と共通
+					</p>
+					<br>
+					<h4>お試しセット（最小構成）</h4>
+					<p class="price">123,600円（税抜）</p>
+					<p class="spec">
+						・指向性超音波ビーコン 2台（別途 追加購入可）<br>
+						・SDKおよびランタイム Android版、iOS版のいずれか<br>
+					</p>
+				</div>
+			</div>
+		</div>
+
 		<a href="#contact" class="button">お問合せはこちら</a>
 	</section>
 	
