@@ -34,7 +34,10 @@ class AppServiceProvider extends ServiceProvider
 
 		$appUrl = config('app.url');
 
-		if ( !empty($referer) && (strpos($referer ,$appUrl) === false) ) {
+		if ( !empty($referer)
+			&& (strpos($referer ,$appUrl) === false)
+			&& (strpos($referer ,'https://www.e-sonic.co.jp') === false)
+			&& (strpos($referer ,'http://e-sonic.co.jp') === false) ) {
 			$url_info = parse_url($referer);
 			$root_url = $url_info['scheme'] . '://' . $url_info['host'];
 		
