@@ -10,6 +10,7 @@ use URL;
 
 use Illuminate\Support\Facades\Mail;
 use App\Mail\ContactLP;
+use App\Models\InqueryReferer;
 
 class LPController extends Controller
 {
@@ -51,6 +52,12 @@ class LPController extends Controller
 
 	// 登録完了のお知らせ
 	 Mail::send(new ContactLP($name, $email, $title, $inquiry));
+
+	$referer = session()->get('lp_ref');
+
+	InqueryReferer::create([
+		'url' => $referer,
+	]);
 
 	return redirect()->route('lp.finish');
   }

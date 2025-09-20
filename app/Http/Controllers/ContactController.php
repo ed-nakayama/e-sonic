@@ -7,6 +7,7 @@ use App\Http\Controllers\Controller;
 
 use Illuminate\Support\Facades\Mail;
 use App\Mail\ContactUs;
+use App\Models\InqueryReferer;
 
 class ContactController extends Controller
 {
@@ -55,6 +56,13 @@ class ContactController extends Controller
 
 	// 登録完了のお知らせ
 	 Mail::send(new ContactUs($name, $mail, $title, $known, $content));
+
+	$referer = session()->get('lp_ref');
+
+	InqueryReferer::create([
+		'url' => $referer,
+	]);
+
 
 	return redirect()->route('contact.finish');
   }

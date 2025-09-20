@@ -7,6 +7,7 @@ use Illuminate\Routing\UrlGenerator;
 
 use App\Models\ProdType;
 use App\Models\ProdCat;
+use App\Models\AccessReferer;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -28,25 +29,22 @@ class AppServiceProvider extends ServiceProvider
     public function boot(UrlGenerator $url)
     {
         $url->forceScheme('https');
-        //
-/*
-        // 管理画面用のクッキー名称、セッションテーブル名を変更する
-        $uri = isset($_SERVER['REQUEST_URI']) ? $_SERVER['REQUEST_URI'] : '';
-//        if (strpos($uri, '/admin/') === 0 || $uri === '/admin') {
-        if (strpos($uri, '/admin/') === 0) {
-            config([
-                'session.cookie' => config('const.session_cookie_admin'),
-                'session.table' => config('const.ssession_table_admin'),
-            ]);
-            
-//        } elseif (strpos($uri, '/cust/') === 0 || $uri === '/cust') {
-        } elseif (strpos($uri, '/cust/') === 0 ) {
-            config([
-                'session.cookie' => config('const.session_cookie_cust'),
-                'session.table' => config('const.ssession_table_cust'),
-            ]);
-        }
-*/
+
+		$referer = !empty($_SERVER['HTTP_REFERER']) ? $_SERVER['HTTP_REFERER'] : '';
+
+		$appUrl = config('app.url');
+
+		if ( !empty($referer) && (strpos($referer ,$appUrl) === false) ) {
+			$url_info = parse_url($referer);
+			$root_url = $url_info['scheme'] . '://' . $url_info['host'];
+		
+			session()->put('lp_ref', $referer);
+
+			AccessReferer::create([
+				'url' => $root_url,
+			]);
+		}
+
 
 		view()->share('prodTypeList', ProdType::orderBy('id')->get());
 		view()->share('prodCatList', ProdCat::orderBy('id')->get());
