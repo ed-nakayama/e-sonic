@@ -184,5 +184,9 @@ Route::group(['prefix' => 'admin'], function(){
 	Route::get('/product/store', 'Admin\ProductController@store')->name('admin.product.store');
 	Route::post('/product/store', 'Admin\ProductController@store');
 
+	// Referer
+	Route::get('/access_referer', 'Admin\RefererController@access_referer');
+	Route::get('/inquery_referer', 'Admin\RefererController@inquery_referer');
+
 });
 
