@@ -43,6 +43,10 @@ $(function(){
 	});
 });
 </script>
+
+{{-- recaptcha --}}
+<script src="https://www.google.com/recaptcha/api.js?render=6Ld4AecrAAAAAJ9U5QdkzUZ6iqQe-7mDKLK-d8Fa"></script>
+
 </head>
 <body>
 
@@ -50,6 +54,14 @@ $(function(){
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WCMDKWRN"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
+
+@if ( config('app.env') == 'Staging')
+	<center>
+	<div style="background-color:red;color:white;font-weight:bolder;font-size:16px;">
+		{{ config('app.env') }}
+	</div>
+	</center>
+@endif
 
 <div  class="wrapper row1">
   <header id="header" class="full_width clear">
@@ -108,11 +120,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </div>
 </div>
 <!-- Scripts --> 
-<script type="text/javascript" src="layout/scripts/jquery-1.10.0.min.js"></script> 
+{{--
+<script type="text/javascript" src="layout/scripts/jquery-1.10.0.min.js"></script>
+--}}
 <script src="https://code.jquery.com/jquery-latest.min.js"></script> 
 <script src="https://code.jquery.com/ui/1.10.1/jquery-ui.min.js"></script> 
+{{--
 <script src="layout/scripts/jquery-mobilemenu.min.js"></script> 
 <script src="layout/scripts/custom.js"></script>
-
+--}}
 </body>
 </html>

@@ -44,6 +44,24 @@ class LPController extends Controller
 
   public function complete(Request $request)
   {
+	$recaptcha_response = $request->recaptchaResponse;
+	$recaptcha_secret = '6Ld4AecrAAAAANtXE42Cmqgwow7uNjPpzDwmFrPy';
+
+	$recaptch_url = 'https://www.google.com/recaptcha/api/siteverify';
+	$recaptcha_params = [
+    	'secret' => $recaptcha_secret,
+    	'response' => $recaptcha_response,
+	];
+	$recaptcha = json_decode(file_get_contents($recaptch_url . '?' . http_build_query($recaptcha_params)));
+	
+	if ($recaptcha->success) {
+		if ($recaptcha->score < 0.5) {
+			abort(404);
+		}
+	} else {
+		abort(404);
+	}
+
 	$name    = isset($request->name)     ? $request->name    : '';
 	$email    = isset($request->email)     ? $request->email    : '';
 	$title   = isset($request->title)    ? $request->title   : '';
