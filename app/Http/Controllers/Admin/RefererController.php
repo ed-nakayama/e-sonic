@@ -22,12 +22,30 @@ class RefererController extends Controller
 ****************************************************/
     public function access_referer(Request $request)
     {
-        $list = AccessReferer::orderBy('id', 'DESC')
-        	->paginate(30);
+		$referer = '';
+        
+		if (!empty($request->referer)) {
+			$referer = $request->referer;
+
+			$list = AccessReferer::where('url', 'like', "%{$referer}%")
+			->orderBy('id', 'DESC')
+				->paginate(30);
+        } else {
+			$list = AccessReferer::orderBy('id', 'DESC')
+				->paginate(30);
+		}
+
+		$dist_list = AccessReferer::groupBy('url')
+			->selectRaw('url, count(*) as count')
+			->orderBy('count', 'DESC')
+			->get();
+        
 
 		return view('admin/access_referer' ,
 		[
+			'referer' => $referer,
 			'list' => $list,
+			'dist_list' => $dist_list,
 		]);
 
     }
@@ -38,12 +56,30 @@ class RefererController extends Controller
 ****************************************************/
     public function inquery_referer(Request $request)
     {
-        $list = InqueryReferer::orderBy('id', 'DESC')
-        	->paginate(30);
+		$referer = '';
+
+		if (!empty($request->referer)) {
+			$referer = $request->referer;
+        
+			$list = InqueryReferer::where('url', 'like', "%{$referer}%")
+				->orderBy('id', 'DESC')
+				->paginate(30);
+
+        } else {
+			$list = InqueryReferer::orderBy('id', 'DESC')
+				->paginate(30);
+		}
+
+		$dist_list = AccessReferer::groupBy('url')
+			->selectRaw('url, count(*) as count')
+			->orderBy('count', 'DESC')
+			->get();
 
 		return view('admin/inquery_referer' ,
 		[
+			'referer' => $referer,
 			'list' => $list,
+			'dist_list' => $dist_list,
 		]);
 
     }
