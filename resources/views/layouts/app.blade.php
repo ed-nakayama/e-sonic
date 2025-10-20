@@ -108,7 +108,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </ul>
   </nav>
 </div>
-      <div align="right"><a href="https://gaishiit.com">外資IT.com</a></div>
+      <div align="right"><a href="{{ config('app.gaishiit_url') }}">外資IT.com</a></div>
 
 	@yield('content')
 
