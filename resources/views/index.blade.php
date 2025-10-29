@@ -52,7 +52,7 @@
               </td>
               <td>
               		<font size="4" color="red">レンタルもしています。</font><br><br>
-					<a href="parametric_doc/rental_price_list_20250317.pdf" target="_blank"><u>指向性超音波スピーカー レンタル価格表</u></a><br><br>
+					<a href="parametric_doc/rental_price_list_20251029.pdf" target="_blank"><u>指向性超音波スピーカー レンタル価格表</u></a><br><br>
               </td>
               </tr>
 			</table>
@@ -160,7 +160,7 @@
               <tr><td>
               ＜お試しセット＞<br>
               　・指向性超音波ビーコン 2台（追加購入可）<br>
-              　・SDKおよびランタイム (Android用 または iOS用)<br>　　　　　　　　（別途 Windows版も可能）<br>
+              　・SDKおよびランタイム (Android用 または iOS用)<br>
               　・サンプルアプリ (Android版 または iOS版)<br>
               　・ID書き換えプログラム (Windows版)<br>
               　・受信ID確認アプリ (Android版)<br>
