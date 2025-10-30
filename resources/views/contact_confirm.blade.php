@@ -1,17 +1,7 @@
 @extends('layouts.app')
 
 {{-- recaptcha --}}
-<script src="https://www.google.com/recaptcha/api.js?render=6Ld4AecrAAAAAJ9U5QdkzUZ6iqQe-7mDKLK-d8Fa"></script>
-
-<script>
-grecaptcha.ready(function() {
-	grecaptcha.execute('6Ld4AecrAAAAAJ9U5QdkzUZ6iqQe-7mDKLK-d8Fa', {action: 'submit'}).then(function(token) {
-		var recaptchaResponse = document.getElementById('recaptchaResponse');
-		recaptchaResponse.value = token;
-	});
-});
-</script>
-
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 @section('content')
 
@@ -45,7 +35,8 @@ grecaptcha.ready(function() {
 				</div>
 				<div class="clear"></div>
 				<p>
-					{{ html()->hidden('recaptchaResponse', '') }}
+					{{-- html()->hidden('recaptchaResponse', '') --}}
+					<div class="g-recaptcha" data-sitekey="6Lf9oPwrAAAAAKyRh3pDS6QevgES0czUURVdaND8" data-callback="verifyCallback" data-expired-callback="expiredCallback"></div><br>
 					<input type="submit" value="送　信" class="sendBtn" id="sendBtn" name="sendBtn">
 					&nbsp;
 					<input type="button" value="戻　る" class="back" onClick="javascript:history.back();">

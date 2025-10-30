@@ -5,16 +5,7 @@
 @endsection
 
 {{-- recaptcha --}}
-<script src="https://www.google.com/recaptcha/api.js?render=6Ld4AecrAAAAAJ9U5QdkzUZ6iqQe-7mDKLK-d8Fa"></script>
-
-<script>
-grecaptcha.ready(function() {
-	grecaptcha.execute('6Ld4AecrAAAAAJ9U5QdkzUZ6iqQe-7mDKLK-d8Fa', {action: 'submit'}).then(function(token) {
-		var recaptchaResponse = document.getElementById('recaptchaResponse');
-		recaptchaResponse.value = token;
-	});
-});
-</script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 @section('content')
 
@@ -65,8 +56,6 @@ grecaptcha.ready(function() {
 				{{ html()->hidden('email', $email) }}
 				{{ html()->hidden('title', $title) }}
 				{{ html()->hidden('inquiry', $inquiry) }}
-				{{ html()->hidden('recaptchaResponse', '') }}
-				{{ html()->form()->close() }}
 
 				<div class="form-input clear">
 					<label class="one_half" for="name"><p style="font-weight:bold;">お名前<span class="required">*</span></p>{{ $name }}</label>
@@ -81,12 +70,14 @@ grecaptcha.ready(function() {
 				</div>
 				<div class="clear"></div>
 				<p>
+					<div class="g-recaptcha" data-sitekey="6Lf9oPwrAAAAAKyRh3pDS6QevgES0czUURVdaND8" data-callback="verifyCallback" data-expired-callback="expiredCallback"></div><br>
 					<div style="display:flex;width:60%;">
 						<a href="javascript:history.back();" class="bk_button">戻る</a>
 						<a href="javascript:inqform.submit();" class="button">送信</a>
 					</div>
 					<br>
 				</p>
+				{{ html()->form()->close() }}
 			</div>
 		</div>
 		<div class="clear"></div>

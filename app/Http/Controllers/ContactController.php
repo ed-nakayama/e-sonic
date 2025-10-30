@@ -46,24 +46,25 @@ class ContactController extends Controller
 
   public function complete(Request $request)
   {
-	$recaptcha_response = $request->recaptchaResponse;
-	$recaptcha_secret = '6Ld4AecrAAAAANtXE42Cmqgwow7uNjPpzDwmFrPy';
-
-	$recaptch_url = 'https://www.google.com/recaptcha/api/siteverify';
-	$recaptcha_params = [
-    	'secret' => $recaptcha_secret,
-    	'response' => $recaptcha_response,
-	];
-	$recaptcha = json_decode(file_get_contents($recaptch_url . '?' . http_build_query($recaptcha_params)));
-	
-	if ($recaptcha->success) {
-		if ($recaptcha->score < 0.5) {
-			abort(404);
-		}
+	if (!empty($_POST['g-recaptcha-response'])) {
+		$recaptcha = $_POST['g-recaptcha-response'];
 	} else {
-		abort(404);
+	    $recaptcha = '';
 	}
+	$secretKey = "6Lf9oPwrAAAAAJ4IGH0UGDGN3-ehjv-hv41sIfC_";
+	$url="https://www.google.com/recaptcha/api/siteverify?secret={$secretKey}&response={$recaptcha}";
+	$ch = curl_init();
+	curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+	curl_setopt( $ch, CURLOPT_URL, $url );
+	curl_setopt( $ch, CURLOPT_RETURNTRANSFER, true );
+	$result = curl_exec( $ch );
+	curl_close($ch);
 
+	$resp_result = json_decode($result,true);
+	if(intval($resp_result["success"]) !== 1) {
+		return view('contact_error');
+	}
+ 
 	$name    = isset($request->name)     ? $request->name    : '';
 	$mail    = isset($request->mail)     ? $request->mail    : '';
 	$title   = isset($request->title)    ? $request->title   : '';
