@@ -70,7 +70,7 @@ class RefererController extends Controller
 				->paginate(30);
 		}
 
-		$dist_list = AccessReferer::groupBy('url')
+		$dist_list = InqueryReferer::groupBy('url')
 			->selectRaw('url, count(*) as count')
 			->orderBy('count', 'DESC')
 			->get();
