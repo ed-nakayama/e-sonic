@@ -95,7 +95,7 @@ body {
 					{{ config('const.comp_address') }}<br>
 					{{ config('const.comp_bld') }}<br>
 					{{ config('const.comp_name') }}<br>
-					サポート　：　https://e-sonic.co.jp/cust<br>
+					サポート　：　{{ config('app.url') }}/cust<br>
 					メール　：　sonic_b@e-sonic.co.jp<br>
 					TEL ： 03-4572-0683<br>
 				</td>

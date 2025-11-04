@@ -15,7 +15,7 @@
 						<div>
 							<p>お客様の登録情報の変更、お客様がご購入した製品の基本仕様のダウンロードや修理依頼をすることができます。<br>
 								<br>
-								URL：https://www.e-sonic.co.jp/cust<br>
+								URL：{{ config('app.url') }}/cust<br>
 								<br>
 								下記の基本情報のメールアドレス、パスワードにてログインできます。<br>
 								マイページから「お客様情報変更」により登録情報の変更が可能です。<br>
@@ -46,14 +46,14 @@
 								<th align="left" width="50%">【部署】</th>
 							</tr>
 							<tr>
-								<td>{{ $customer->unit_name }}</td>
+								<td>{{ $customer->unit_name }} </td>
 							</tr>
 
 							<tr>
 								<th align="left" width="50%">【ご担当者】</th>
 							</tr>
 							<tr>
-								<td>{{ $customer->person_name }}&nbsp;&nbsp;&nbsp;&nbsp;様</td>
+								<td>{{ $customer->person_name }} </td>
 							</tr>
 
 							<tr>
