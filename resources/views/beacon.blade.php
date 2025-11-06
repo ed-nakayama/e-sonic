@@ -29,6 +29,13 @@
     0% {opacity:0;}
     100% {opacity:1;}
 }
+
+.note {
+	color:red;
+	font-size:16px;
+	vertical-align:top;
+}
+
 </style>
 
 
@@ -136,8 +143,12 @@
 						・ベース周波数 40kHz<br>
 						・想定設置位置：天井 およそ５ｍ<br>
 						・スマートフォンまたはタブレットで信号受信<br>
-						・内部電圧 24V または 36V 選択<br>
-						・入力電圧 24V or 5V（オプション）<br>
+						・内部電圧 24V または 36V（オプション）<br>
+						・入力電圧 24V <font class="note">※1</font> or 5V（オプション）<font class="note">※2</font><br>
+						<font  style="color:red; font-size:16px;">
+							　　　※1　24V ACアダプタ（内部電圧 24Vのみ）<br>
+							　　　※2　ACアダプタ（5V） または、DCプラグ-USB 電源ケーブル<br>
+						</font>
 						＞＞＞ <a href="beacon_doc/beacon_spec.pdf" target="_blank">指向性超音波ビーコン 基本仕様</a>
 					</p>
 					<br>
