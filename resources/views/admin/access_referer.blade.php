@@ -33,14 +33,13 @@
 
 			<section class="secContents-mb">
 				<div class="secContentsInner">
-
+12か月以内の件数
 					<table class="tbl-refererlist mb-ajust" id="refTable">
 						<tr>
 							<th>id</th><th>日付</th><th>URL</th>
 						</tr>
-                               
 						@foreach ($list as $ref)
-							<tr @if ( (strpos($ref->url ,'metoree.com') !== false) || (strpos($ref->url ,'atpress.ne.jp') !== false) ) style="background-color:yellow;" @endif>
+							<tr @if (strpos($ref->url ,'metoree.com') !== false) style="background-color:#f0e68c;" @elseif (strpos($ref->url ,'atpress.ne.jp') !== false) style="background-color:#ffd700;" @endif>
 								<td>{{ $ref->id }}</td>
 								<td>{{ str_replace('-','/', $ref->created_at) }}</td>
 								<td>{{ $ref->url }}</td>
@@ -61,14 +60,39 @@
 			<section class="secContents-mb">
 				<div class="secContentsInner">
 
-					<table class="tbl-refererlist mb-ajust" id="refTable">
+					<table class="tbl-refererlist2 mb-ajust" id="refTable">
 						<tr>
-							<th>referer</th><th>count</th>
+							<th>referer</th><th>総カウント</th>
+							<th>{{ date("Y/m") }}</th>
+							<th>{{ date('Y/m', strtotime('-1 month')) }}</th>
+							<th>{{ date('Y/m', strtotime('-2 month')) }}</th>
+							<th>{{ date('Y/m', strtotime('-3 month')) }}</th>
+							<th>{{ date('Y/m', strtotime('-4 month')) }}</th>
+							<th>{{ date('Y/m', strtotime('-5 month')) }}</th>
+							<th>{{ date('Y/m', strtotime('-6 month')) }}</th>
+							<th>{{ date('Y/m', strtotime('-7 month')) }}</th>
+							<th>{{ date('Y/m', strtotime('-8 month')) }}</th>
+							<th>{{ date('Y/m', strtotime('-9 month')) }}</th>
+							<th>{{ date('Y/m', strtotime('-10 month')) }}</th>
+							<th>{{ date('Y/m', strtotime('-11 month')) }}</th>
 						</tr>
                                
 						@foreach ($dist_list as $ref)
-								<td @if ( (strpos($ref->url ,'metoree.com') !== false) || (strpos($ref->url ,'atpress.ne.jp') !== false) ) style="background-color:yellow;" @endif>{{ $ref->url }}</td>
+							<tr @if (strpos($ref->url ,'metoree.com') !== false) style="background-color:#f0e68c;" @elseif (strpos($ref->url ,'atpress.ne.jp') !== false) style="background-color:#ffd700;" @endif>
+								<td style="text-align: left;">{{ $ref->url }}</td>
 								<td>{{ $ref->count }}</td>
+								<td>{{ $ref->mon1 }}</td>
+								<td>{{ $ref->mon2 }}</td>
+								<td>{{ $ref->mon3 }}</td>
+								<td>{{ $ref->mon4 }}</td>
+								<td>{{ $ref->mon5 }}</td>
+								<td>{{ $ref->mon6 }}</td>
+								<td>{{ $ref->mon7 }}</td>
+								<td>{{ $ref->mon8 }}</td>
+								<td>{{ $ref->mon9 }}</td>
+								<td>{{ $ref->mon10 }}</td>
+								<td>{{ $ref->mon11 }}</td>
+								<td>{{ $ref->mon12 }}</td>
 							</tr>
 						@endforeach
 					</table>

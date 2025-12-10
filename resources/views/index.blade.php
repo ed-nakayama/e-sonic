@@ -65,7 +65,6 @@
                <a href="/parametric" style="font-size:1.4rem;text-decoration:underline;">パラメトリックスピーカーとは</a><br><br>
 
                <img src="parametric_images/IMG_1759_R_C.JPG" alt="parametric"  style="width: 80%; height: auto;"><br><br>
-				<span  class="blinking" style="color:#ffffff; background-color:#ff0000; padding:2px 2px 2px 2px">NEW</span>
                <font size="4" color="red"><b>指向性超音波スピーカー<br>　　　　／標準コンパクトタイプ V2」</b></font><br>
                <div style="text-align: left;">
                <b>標準タイプと同じ個数の超音波素子に国産の小型タイプで、同程度の音圧でライトタイプのコンパクトさを実現！<br>
@@ -76,7 +75,6 @@
              <br><br><br>
 
                <img src="parametric_images/IMG_1767_R_C.JPG" alt="parametric"  style="width: 85%; height: auto;"><br><br>
-				<span  class="blinking" style="color:#ffffff; background-color:#ff0000; padding:2px 2px 2px 2px">NEW</span>
                <font size="4" color="red"><b>指向性超音波スピーカー<br>　　　　／ミドルタイプ（受注生産）」</b></font><br>
                <div style="text-align: left;">
                <b>国産超音素子の数307個のミッドレンジの指向性超音波スピーカーを発売！可聴音域で、音圧80dB超をを実現。<br>
@@ -105,7 +103,7 @@
                <B>コスト重視！Web会議にピッタリ！</b><br>
                <B>本体価格：70,000円(税抜)</b>
               <a href="parametric_doc/parametoric_light_spec.pdf" target="_blank"><br><u>指向性超音波スピーカー/ライトタイプ 基本仕様</u></a><br><br>
---}}
+
 			<img src="parametric_images/IMG_1760_R_C.JPG" alt="parametric"  style="width: 80%; height: auto;"><br><br>
 			<font size="4" color="red"><b>「指向性超音波スピーカー／標準タイプ」</b></font>
 			<div style="text-align: left;">
@@ -114,10 +112,10 @@
 			<b>本体価格：100,000円(税抜)</b>
 			<a href="parametric_doc/parametoric_standard_spec.pdf" target="_blank"><br><u>指向性超音波スピーカー/標準タイプ 基本仕様</u></a>
 			<br><br><br>
-
+--}}
               <img src="parametric_images/IMG_0447_R.JPG" alt="parametric"  style="width: 90%; height: auto;"><br><br>
                <font size="4" color="red"><b>「指向性超音波スピーカー<br>　　　　　　　／音圧アップタイプ）」</b></font><br>
-               <font size="3">受注生産</font><br>
+               <font size="3">受注生産（生産終了）</font><br>
                <font size="3">特許第6707242号（特願2019-176180）</font>
              <a href="parametric_doc/parametoric_spl_up_spec.pdf" target="_blank"><br><u>指向性超音波スピーカー/音圧タイプ 基本仕様</u></a>
 <!--             <a href="parametric_doc/parametoric_spl_up_mk2_spec.pdf" target="_blank"><br><u>指向性超音波スピーカー/音圧タイプMKⅡ 基本仕様</u></a>-->

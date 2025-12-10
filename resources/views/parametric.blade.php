@@ -138,7 +138,7 @@
 				<img src="/lp/parametric/images/item01.png" alt="製品画像">
 				<div class="order-text">
 					<h4>指向性超音波スピーカー／大音圧タイプ<br>（カスタマイズ品／注文生産）</h4>
-					<p class="price">850,000円～</p>
+					<p class="price">950,000円～</p>
 					<p class="spec">
 						・超音波素子数：約 1,200個<br>
 						・消費電力：およそ120W<br>

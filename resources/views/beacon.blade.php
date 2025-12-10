@@ -156,14 +156,21 @@
 					<p class="price">84,000円/OS（税抜）</p>
 					<p class="spec">
 						・SDKおよびランタイム Android版、iOS版のいずれか<br>
-						　（別途 Windows版も可能）
+						　（別途 Windows版も可能）<br>
+						<font  style="color:blue; font-size:14px; white-space:nowrap;">
+						＜ライセンスの考え方＞<br>
+						・１施設（ハードを設置する施設）に対しOSごとに１ライセンスが必要です。<br>
+						・施設A、施設Bの2か所に設置する場合は、同じOSであってもそれぞれライセンスが必要になります。<br>
+						・同一の施設Aであれば、１ライセンスで複数のアプリの作成は問題ありません。<br>
+						・「１施設に対し１ライセンス」という条件に該当しないケースに関しては別途ご相談ください。<br>
+						</font>
 					</p>
 					<br>
 					<h4>その他付属品</h4>
 					<p class="spec">
 						・サンプルアプリ (Android版 または iOS版)<br>
-						・ID書き換えプログラム (Windows版)<br>
-						・受信ID確認アプリ (Android版)<br>
+						・ID書き換えプログラム (Windows版のみ)<br>
+						・受信ID確認アプリ (Android版のみ)<br>
 						・各種ドキュメント
 					</p>
 					<br>

@@ -827,3 +827,63 @@ select {
 .tbl-refererlist th, .tbl-refererlist td {
     padding: 5px 10px;
 }
+
+
+.tbl-refererlist2 {
+    width: 100%;
+    font-size: 12px;
+}
+.tbl-refererlist2 tr:nth-child(odd) {
+	background-color:#F5F5F5;
+}
+.tbl-refererlist2 th:nth-child(1) {
+	width: auto%;
+    text-align: left;
+}
+.tbl-refererlist2 th:nth-child(2) {
+	width: 8%;
+}
+.tbl-refererlist2 th:nth-child(3) {
+	width: 5%;
+}
+.tbl-refererlist2 th:nth-child(4) {
+	width: 5%;
+}
+.tbl-refererlist2 th:nth-child(5) {
+	width: 5%;
+}
+.tbl-refererlist2 th:nth-child(6) {
+	width: 5%;
+}
+.tbl-refererlist2 th:nth-child(7) {
+	width: 5%;
+}
+.tbl-refererlist2 th:nth-child(8) {
+	width: 5%;
+}
+.tbl-refererlist2 th:nth-child(9) {
+	width: 5%;
+}
+.tbl-refererlist2 th:nth-child(10) {
+	width: 5%;
+}
+.tbl-refererlist2 th:nth-child(11) {
+	width: 5%;
+}
+.tbl-refererlist2 th:nth-child(12) {
+	width: 5%;
+}
+.tbl-refererlist2 th:nth-child(13) {
+	width: 5%;
+}
+.tbl-refererlist2 th:nth-child(14) {
+	width: 5%;
+}
+
+.tbl-refererlist2 th {
+    border-bottom: 1px solid #707070;
+}
+.tbl-refererlist2 th, .tbl-refererlist2 td {
+    padding: 5px 10px;
+    text-align: right;
+}

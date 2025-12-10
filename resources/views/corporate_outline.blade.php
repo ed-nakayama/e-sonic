@@ -56,6 +56,7 @@
           </tbody>
         </table>
       </section>
+{{--
       <section class="clear">
         <h1>主要取引先</h1>
         <div>
@@ -68,13 +69,14 @@
           ・音波研究所ソンラボ<br>
           ・株式会社トライキッツ<br>
       </section>
+--}}
       <section class="clear">
-        <h1>関連企業</h1>
+        <h1>協力企業</h1>
         <div>
+          ・<a target="_blank" href="http://www.trykits.com/">株式会社トライキッツ</a><br>
           ・<a target="_blank" href="http://www.e-d.co.jp/">株式会社イーアンドディー</a><br>
           ・<a target="_blank" href="http://www.sofnec.co.jp/">ソフネック株式会社</a><br>
           ・<a target="_blank" href="http://www.yndrd.com/">株式会社イェンドレッド</a><br>
-          ・<a target="_blank" href="http://www.trykits.com/">株式会社トライキッツ</a><br>
 <!--         ・<a target="_blank" href="http://www.d-ark.co.jp/">株式会社アーク</a> -->
 	</div>
       </section>
