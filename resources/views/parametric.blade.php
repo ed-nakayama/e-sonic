@@ -135,15 +135,21 @@
 		<div class="order-block">
 			<h3>工場、工事現場、高速道路での注意喚起に最適！</h3>
 			<div class="order-content">
+				<div style="display:flex;flex-direction: column;">
+				<img src="parametric_images//IMG_2073_R_C2.JPG" alt="製品画像"><br>
 				<img src="/lp/parametric/images/item01.png" alt="製品画像">
+				</div>
 				<div class="order-text">
 					<h4>指向性超音波スピーカー／大音圧タイプ<br>（カスタマイズ品／注文生産）</h4>
-					<p class="price">950,000円～</p>
+					<p class="price">950,000円～（税抜）</p>
 					<p class="spec">
-						・超音波素子数：約 1,200個<br>
-						・消費電力：およそ120W<br>
+						・超音波素子数：600個以上<br>
+						・国内および海外超音波素子選択<br>
 						・筐体は別途お客様の要望により製作<br>
-						・工場内、交通量の多い道路での使用を想定
+						・工場内、交通量の多い道路での使用を想定<br>
+						・要望により防水対応<br>
+						<br>
+						<span  style="color:#ff0000; padding:2px 2px 2px 2px">※左画像はカスタマイズ例</span>
 					</p>
 				</div>
 			</div>
@@ -154,22 +160,46 @@
 			<div class="order-content">
 				<img src="parametric_images/IMG_1759_R_C.JPG" alt="parametric">
 				<div class="order-text">
-					<span  class="blinking" style="color:#ffffff; background-color:#ff0000; padding:2px 2px 2px 2px">NEW</span>
 					<h4>指向性超音波スピーカー／標準コンパクトタイプ V2</h4>
-					<p class="price">120,000円</p>
+					<p class="price">120,000円（税抜）</p>
 					<p class="spec">
 						・サイズ：150×150×32mm<br>
 						・重量：420g<br>
 						・電圧：DC 12V（12V～19Vの範囲内であれば可能）<br>
-						・消費電力：およそ6W<br>
+						・消費電力：約 14W<br>
 						・超音波素子数：61個<br>
+						・最大音圧：約 61dB（距離2m A特性）<br>
+						・指向角度：約 40°<br>
 						・入力プラグ：3.5mm ステレオプラグ<br>
 						・国内超音波素子使用<br>
 					</p>
 				</div>
 			</div>
 		</div>
-
+{{--
+		<div class="order-block">
+			<h3>博物館など屋内使用に最適！</h3>
+			<div class="order-content">
+				<img src="parametric_images/IMG_1759_R_C.JPG" alt="parametric">
+				<div class="order-text">
+				<span  class="blinking" style="color:#ffffff; background-color:#ff0000; padding:2px 2px 2px 2px">NEW</span>
+					<h4>指向性超音波スピーカー／超・指向性コンパクトタイプ</h4>
+					<p class="price">190,000円（税抜）</p>
+					<p class="spec">
+						・サイズ：200×200×55mm<br>
+						・重量：1060g<br>
+						・電圧：DC 12V（12V～19Vの範囲内であれば可能）<br>
+						・消費電力：約 14W<br>
+						・超音波素子数：61個<br>
+						・最大音圧：約 64dB（距離2m A特性）<br>
+						・指向角度：約 15°<br>
+						・入力プラグ：3.5mm ステレオプラグ<br>
+						・国内超音波素子使用<br>
+					</p>
+				</div>
+			</div>
+		</div>
+--}}
 		<div class="order-block">
 			<h3>雑多な屋内使用に最適！</h3>
 			<div class="order-content">
@@ -177,14 +207,16 @@
 				<div class="order-text">
 					<span  class="blinking" style="color:#ffffff; background-color:#ff0000; padding:2px 2px 2px 2px">NEW</span>
 					<h4>指向性超音波スピーカー／ミドルタイプ（注文生産）</h4>
-					<p class="price">320,000円</p>
+					<p class="price">320,000円（税抜）</p>
 					<p class="spec">
 						・サイズ：スピーカー部 320 × 115×50mm<br>
 						　　　　　アンプ部 106 × 200 × 61.1mm<br>
 						・重量：スピーカー部 1.2kg／アンプ部 750g<br>
 						・電圧：DC 12V（12V～19Vの範囲内であれば可能）<br>
-						・消費電力：およそ65W<br>
+						・消費電力：約 68W<br>
 						・超音波素子数：307個<br>
+						・最大音圧：約 75dB（距離2m A特性）<br>
+						・指向角度：約 40°<br>
 						・入力プラグ：3.5mm ステレオプラグ／RCA プラグ<br>
 						・国内超音波素子使用<br>
 					</p>
