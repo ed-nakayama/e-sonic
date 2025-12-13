@@ -136,8 +136,8 @@
 			<h3>工場、工事現場、高速道路での注意喚起に最適！</h3>
 			<div class="order-content">
 				<div style="display:flex;flex-direction: column;">
-				<img src="parametric_images//IMG_2073_R_C2.JPG" alt="製品画像"><br>
-				<img src="/lp/parametric/images/item01.png" alt="製品画像">
+					<img src="parametric_images//IMG_2073_R_C2.JPG" alt="製品画像"><br>
+					<img src="/lp/parametric/images/item01.png" alt="製品画像">
 				</div>
 				<div class="order-text">
 					<h4>指向性超音波スピーカー／大音圧タイプ<br>（カスタマイズ品／注文生産）</h4>
@@ -176,13 +176,16 @@
 				</div>
 			</div>
 		</div>
-{{--
+
 		<div class="order-block">
-			<h3>博物館など屋内使用に最適！</h3>
+			<h3>さらに指向性を必要とされる方に！</h3>
 			<div class="order-content">
-				<img src="parametric_images/IMG_1759_R_C.JPG" alt="parametric">
+				<div style="display:flex;flex-direction: column;">
+					<img src="parametric_images/IMG_2024_R_C.jpg" alt="parametric">
+					<font style="color:#ff0000;font-size:16px;">※準備中のため画像は<br>プロトタイプを使用</font>
+				</div>
 				<div class="order-text">
-				<span  class="blinking" style="color:#ffffff; background-color:#ff0000; padding:2px 2px 2px 2px">NEW</span>
+				<span  class="blinking" style="color:#ffffff; background-color:#ff0000; padding:2px 2px 2px 2px;">ただいま準備中</span>
 					<h4>指向性超音波スピーカー／超・指向性コンパクトタイプ</h4>
 					<p class="price">190,000円（税抜）</p>
 					<p class="spec">
@@ -192,14 +195,14 @@
 						・消費電力：約 14W<br>
 						・超音波素子数：61個<br>
 						・最大音圧：約 64dB（距離2m A特性）<br>
-						・指向角度：約 15°<br>
+						・<font style="color:#ff0000;">指向角度：約 15°</font><br>
 						・入力プラグ：3.5mm ステレオプラグ<br>
 						・国内超音波素子使用<br>
 					</p>
 				</div>
 			</div>
 		</div>
---}}
+
 		<div class="order-block">
 			<h3>雑多な屋内使用に最適！</h3>
 			<div class="order-content">
@@ -232,8 +235,10 @@
 	<section id="features">
 		<h2>特定範囲だけ音を聞かせるスピーカー</h2>
 		<img src="/lp/parametric/images/feature01.png" alt="features image">
+{{--
 		<h2>指向性の確認</h2>
 		<img src="/lp/parametric/images/feature02.png" alt="features image">
+--}}
 	</section>
 	
 	<section id="usage-example">
