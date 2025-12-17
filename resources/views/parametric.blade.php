@@ -185,7 +185,10 @@
 					<font style="color:#ff0000;font-size:16px;">※準備中のため画像は<br>プロトタイプを使用</font>
 				</div>
 				<div class="order-text">
-				<span  class="blinking" style="color:#ffffff; background-color:#ff0000; padding:2px 2px 2px 2px;">ただいま準備中</span>
+				<div style="display: flex; justify-content: space-between;">
+					<span class="blinking" style="color:#ffffff; background-color:#ff0000; padding:2px 2px 2px 2px;">ただいま準備中</span>
+					<div>特許第6707242号（特願2019-176180）</div>
+				</div>
 					<h4>指向性超音波スピーカー／超・指向性コンパクトタイプ</h4>
 					<p class="price">190,000円（税抜）</p>
 					<p class="spec">
