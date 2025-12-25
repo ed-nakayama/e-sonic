@@ -52,7 +52,7 @@
               </td>
               <td>
               		<font size="4" color="red">レンタルもしています。</font><br><br>
-					<a href="parametric_doc/rental_price_list_20251029.pdf" target="_blank"><u>指向性超音波スピーカー レンタル価格表</u></a><br><br>
+					<a href="parametric_doc/rental_price_list_20251225.pdf" target="_blank"><u>指向性超音波スピーカー レンタル価格表</u></a><br><br>
               </td>
               </tr>
 			</table>
