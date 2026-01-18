@@ -136,7 +136,7 @@
 			<h3>工場、工事現場、高速道路での注意喚起に最適！</h3>
 			<div class="order-content">
 				<div style="display:flex;flex-direction: column;">
-					<img src="parametric_images//IMG_2073_R_C2.JPG" alt="製品画像"><br>
+					<img src="parametric_images/IMG_2073_R_C2.JPG" alt="製品画像"><br>
 					<img src="/lp/parametric/images/item01.png" alt="製品画像">
 				</div>
 				<div class="order-text">
@@ -181,12 +181,11 @@
 			<h3>さらに指向性を必要とされる方に！</h3>
 			<div class="order-content">
 				<div style="display:flex;flex-direction: column;">
-					<img src="parametric_images/IMG_2024_R_C.jpg" alt="parametric">
-					<font style="color:#ff0000;font-size:16px;">※準備中のため画像は<br>プロトタイプを使用</font>
+					<img src="parametric_images/IMG_2097_R_C0.jpg" alt="parametric">
 				</div>
 				<div class="order-text">
 				<div style="display: flex; justify-content: space-between;">
-					<span class="blinking" style="color:#ffffff; background-color:#ff0000; padding:2px 2px 2px 2px;">ただいま準備中</span>
+					<span class="blinking" style="color:#ffffff; background-color:#ff0000; padding:2px 2px 2px 2px;">NEW</span>
 					<div>特許第6707242号（特願2019-176180）</div>
 				</div>
 					<h4>指向性超音波スピーカー／超・指向性コンパクトタイプ</h4>

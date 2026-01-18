@@ -74,6 +74,17 @@
              <a href="parametric_doc/parametoric_compact_V2_spec.pdf" target="_blank"><br><u>指向性超音波スピーカー<br>/標準コンパクトタイプ V2 基本仕様</u></a>
              <br><br><br>
 
+               <img src="parametric_images/IMG_2097_R_C0.jpg" alt="parametric"  style="width: 80%; height: auto;"><br><br>
+				<span  class="blinking" style="color:#ffffff; background-color:#ff0000; padding:2px 2px 2px 2px">NEW</span>
+               <font size="4" color="red"><b>指向性超音波スピーカー<br>　　　　／超・指向性コンパクトタイプ」</b></font><br>
+               <font size="3">特許第6707242号（特願2019-176180）</font><br>
+               <div style="text-align: left;">
+               <b>基本的には標準コンパクトタイプと同じ仕様ですが、弊社特許技術を加えることによりさらに指向性を高め、音圧もアップすることを実現！</b><br>
+             </div>
+               <b>本体価格：190,000円(税抜)</b>
+             <a href="parametric_doc/parametric_super_compact_spec.pdf" target="_blank"><br><u>指向性超音波スピーカー<br>/超・指向性コンパクトタイプ 基本仕様</u></a>
+             <br><br><br>
+
                <img src="parametric_images/IMG_1767_R_C.JPG" alt="parametric"  style="width: 85%; height: auto;"><br><br>
                <font size="4" color="red"><b>指向性超音波スピーカー<br>　　　　／ミドルタイプ（受注生産）」</b></font><br>
                <div style="text-align: left;">
@@ -90,39 +101,19 @@
                <div style="text-align: left;">
                <font size="3" color="red">騒音下での利用目的に超音波素子を増やしたカスタマイズ品の要望が増えています。</font>
              </div>
-               <img src="parametric_images/item01.png" alt="parametric"  style="width: 80%; height: auto;"><br>
+				<img src="parametric_images/IMG_2073_R_C2.JPG" alt="製品画像"   style="width: 80%; height: auto;">
                <p style="color:red;font-size:1.2rem;font-weight:bold;">「指向性超音波スピーカー／大音圧タイプ<br>（カスタマイズ品／注文生産）」</p>
-               <p style="font-weight:bold;">超音波素子 約 1,200個　　850,000円～　筐体は別途<br>
+               <p style="font-weight:bold;">超音波素子 600個以上　950,000円～　筐体は別途<br>
                	工場内、交通量の多い道路での使用を想定。
                </p>
-             
-			<br><br>
 {{--
-              <img src="parametric_images/light_type.JPG" alt="parametric"  style="width: 70%; height: auto;"><br><br>
-               <font size="4" color="red"><b>「指向性超音波スピーカー<br>　　　　　　　／ライトタイプ）」</b></font><br>
-               <B>コスト重視！Web会議にピッタリ！</b><br>
-               <B>本体価格：70,000円(税抜)</b>
-              <a href="parametric_doc/parametoric_light_spec.pdf" target="_blank"><br><u>指向性超音波スピーカー/ライトタイプ 基本仕様</u></a><br><br>
-
-			<img src="parametric_images/IMG_1760_R_C.JPG" alt="parametric"  style="width: 80%; height: auto;"><br><br>
-			<font size="4" color="red"><b>「指向性超音波スピーカー／標準タイプ」</b></font>
-			<div style="text-align: left;">
-			<b>海外製の超音波素子38個 直径16mmタイプで、10mm超音波素子より少ない個数で同等の音圧が得られます！</b><br>
-			</div>
-			<b>本体価格：100,000円(税抜)</b>
-			<a href="parametric_doc/parametoric_standard_spec.pdf" target="_blank"><br><u>指向性超音波スピーカー/標準タイプ 基本仕様</u></a>
-			<br><br><br>
---}}
+			<br><br>
               <img src="parametric_images/IMG_0447_R.JPG" alt="parametric"  style="width: 90%; height: auto;"><br><br>
                <font size="4" color="red"><b>「指向性超音波スピーカー<br>　　　　　　　／音圧アップタイプ）」</b></font><br>
                <font size="3">受注生産（生産終了）</font><br>
                <font size="3">特許第6707242号（特願2019-176180）</font>
              <a href="parametric_doc/parametoric_spl_up_spec.pdf" target="_blank"><br><u>指向性超音波スピーカー/音圧タイプ 基本仕様</u></a>
-<!--             <a href="parametric_doc/parametoric_spl_up_mk2_spec.pdf" target="_blank"><br><u>指向性超音波スピーカー/音圧タイプMKⅡ 基本仕様</u></a>-->
-<br>
-<!--               <font size="5" color="red"><b>販売中！</b></font>-->
-               <br><br>
-
+--}}
 
               <table style="border-style: none; margin-left: 20px;">
               <tr><td>
