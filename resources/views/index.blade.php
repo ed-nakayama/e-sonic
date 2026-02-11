@@ -190,6 +190,10 @@
           <ul class="nospace spacing clear">
             <li>
               <figure class="clear">
+                <figcaption>2026/01/18<br>
+                  　<b><font color="red">「指向性超音波スピーカー<br>　　／超・指向性コンパクトタイプ」　販売開始！</font></b><br>
+                  　　<b>「標準コンパクトタイプ V2」をさらに進化！</b><br><br>
+
                 <figcaption>2025/04/04<br>
                   　<b><font color="red">神田にオフィス移転しました！</font></b><br><br>
 

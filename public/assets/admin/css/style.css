@@ -817,7 +817,7 @@ select {
     text-align: left;
 }
 .tbl-refererlist th:nth-child(3) {
-	width: auto%;
+	width: auto;
     text-align: left;
 }
 
@@ -837,7 +837,7 @@ select {
 	background-color:#F5F5F5;
 }
 .tbl-refererlist2 th:nth-child(1) {
-	width: auto%;
+	width: auto;
     text-align: left;
 }
 .tbl-refererlist2 th:nth-child(2) {
@@ -886,4 +886,41 @@ select {
 .tbl-refererlist2 th, .tbl-refererlist2 td {
     padding: 5px 10px;
     text-align: right;
+}
+
+
+/* シリアル 一覧 */
+.tbl-seriallist {
+    width: 100%;
+    font-size: 12px;
+}
+.tbl-seriallist tr:nth-child(odd) {
+	background-color:#F5F5F5;
+}
+.tbl-seriallist th:nth-child(1) {
+	width: 30%;
+    text-align: left;
+}
+.tbl-seriallist th:nth-child(2) {
+	width: 30%;
+    text-align: left;
+}
+.tbl-seriallist th:nth-child(3) {
+	width: 5%;
+    text-align: left;
+}
+.tbl-seriallist th:nth-child(4) {
+	width:30%;
+    text-align: left;
+}
+.tbl-seriallist th:nth-child(5) {
+	width: 5%;
+    text-align: left;
+}
+
+.tbl-seriallist th {
+    border-bottom: 1px solid #707070;
+}
+.tbl-seriallist th, .tbl-seriallist td {
+    padding: 5px 10px;
 }

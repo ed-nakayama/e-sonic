@@ -19,6 +19,7 @@
             <h1 class="logo"><a href="/admin/login"><img src="/images/logo.png" width="200"></a></h1>
 			<div style="text-align: right;margin-bottom: 10px;">
 @auth
+				<a href="/admin/serial_list"  class="squareBtn"  style="width: 140px;height: 30px;padding: 5px 0;">Serial List</a>
 				<a href="/admin/access_referer"  class="squareBtn"  style="width: 140px;height: 30px;padding: 5px 0;">Access Referer</a>
 				<a href="/admin/inquery_referer"  class="squareBtn"  style="width: 140px;height: 30px;padding: 5px 0;">Inquery Referer</a>
 				<a href="{{ route('admin.product') }}"  class="squareBtn"  style="width: 140px;height: 30px;padding: 5px 0;">製品マスタ</a>

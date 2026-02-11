@@ -19,6 +19,7 @@ use App\Models\Product;
 use App\Models\ProdList;
 
 use Hashids\Hashids;
+//use Barryvdh\DomPDF\Facade\Pdf as DomPdf;
 
 class MypageController extends Controller
 {
@@ -129,12 +130,15 @@ class MypageController extends Controller
 		if ( !empty($request->cust_id) ) {
 			$customer = Customer::find($request->cust_id);
 		}
-		
-		$pdf = \PDF::loadView('pdf_templates.customer_guide',
+
+//		$pdf = \Barryvdh\DomPDF\Facade\Pdf::loadView('pdf_templates.customer_guide_test',
+		$pdf = \DomPdf::loadView('pdf_templates.customer_guide',
 			['customer' => $customer],
-		);
-		$pdf->setPaper('A4');
-		
+		)
+		->setPaper('A4')
+		->setOption('disable-smart-shrinking', true);
+
+//		return $pdf->inline('cool-na-pdf.pdf');
 		return $pdf->download('customer_guide.pdf');
 
     }
@@ -227,5 +231,33 @@ class MypageController extends Controller
 
 		return redirect()->route('admin.cust.hold', ['cust_id' => $prod_list->customer_id ]);
     }
+
+
+/***************************************************
+* シリアル番号一覧
+****************************************************/
+    public function serial_list(Request $request)
+    {
+
+		$param_list = ProdList::leftJoin('products', 'product_id', 'products.id')
+			->where('prod_serial','!=', '-')
+			->where('cat_id','1')
+			->where('prod_type','1')
+			->orderBy('buy_date', 'DESC')
+			->get();
+
+		$beacon_list = ProdList::leftJoin('products', 'product_id', 'products.id')
+			->where('prod_serial','!=', '-')
+			->where('cat_id','1')
+			->where('prod_type','2')
+			->orderBy('buy_date', 'DESC')
+			->get();
+
+		return view('admin/serial_list' ,compact(
+			'param_list',
+			'beacon_list',
+			));
+    }
+
 
 }
