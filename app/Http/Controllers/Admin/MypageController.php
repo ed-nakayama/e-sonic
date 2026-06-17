@@ -19,7 +19,7 @@ use App\Models\Product;
 use App\Models\ProdList;
 
 use Hashids\Hashids;
-//use Barryvdh\DomPDF\Facade\Pdf as DomPdf;
+use Barryvdh\DomPDF\Facade\Pdf;
 
 class MypageController extends Controller
 {
@@ -132,7 +132,7 @@ class MypageController extends Controller
 		}
 
 //		$pdf = \Barryvdh\DomPDF\Facade\Pdf::loadView('pdf_templates.customer_guide_test',
-		$pdf = \DomPdf::loadView('pdf_templates.customer_guide',
+		$pdf = Pdf::loadView('pdf_templates.customer_guide',
 			['customer' => $customer],
 		)
 		->setPaper('A4')
