@@ -54,11 +54,11 @@ class Handler extends ExceptionHandler
 //    public function render($request, Exception $exception)
     public function render($request, Throwable $exception)
     {
-        // ¥È¡¼¥¯¥ó¥ß¥¹¤¬È¯À¸¤·¤¿¾ì¹ç
+        // ãƒˆãƒ¼ã‚¯ãƒ³ãƒŸã‚¹ãŒç™ºç”Ÿã—ãŸå ´åˆ
         if ($exception instanceof \Illuminate\Session\TokenMismatchException){
-            // Á°¤Î²èÌÌ¤ËÌá¤ë¤Î¤Ç¤Ï¤Ê¤¯¡¢¿·¤·¤¤¥»¥Ã¥·¥ç¥ó¤Ç¥í¥°¥¤¥ó²èÌÌ¤ØÄ¾ÀÜ¥ê¥À¥¤¥ì¥¯¥È¤¹¤ë
+            // å‰ã®ç”»é¢ã«æˆ»ã‚‹ã®ã§ã¯ãªãã€æ–°ã—ã„ã‚»ãƒƒã‚·ãƒ§ãƒ³ã§ãƒ­ã‚°ã‚¤ãƒ³ç”»é¢ã¸ç›´æŽ¥ãƒªãƒ€ã‚¤ãƒ¬ã‚¯ãƒˆã™ã‚‹
             return redirect()
-                ->route('login') // ¤Þ¤¿¤ÏÄ¾ÀÜ URL ¤ò»ØÄê¤¹¤ë¾ì¹ç¤Ï ->to('/login')
+                ->route('login') // ã¾ãŸã¯ç›´æŽ¥ URL ã‚’æŒ‡å®šã™ã‚‹å ´åˆã¯ ->to('/login')
                 ->withErrors([trans('auth.failed')]);
         }
 
