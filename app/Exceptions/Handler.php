@@ -5,6 +5,7 @@ namespace App\Exceptions;
 use Exception;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 use Throwable;
+use Symfony\Component\HttpKernel\Exception\HttpException; 
 
 class Handler extends ExceptionHandler
 {
@@ -53,9 +54,12 @@ class Handler extends ExceptionHandler
 //    public function render($request, Exception $exception)
     public function render($request, Throwable $exception)
     {
-        // トークンミス
+        // トークンミスが発生した場合
         if ($exception instanceof \Illuminate\Session\TokenMismatchException){
-            return back()->withErrors([trans('auth.failed')]);
+            // 前の画面に戻るのではなく、新しいセッションでログイン画面へ直接リダイレクトする
+            return redirect()
+                ->route('login') // または直接 URL を指定する場合は ->to('/login')
+                ->withErrors([trans('auth.failed')]);
         }
 
         return parent::render($request, $exception);

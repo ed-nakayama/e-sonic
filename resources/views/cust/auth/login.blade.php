@@ -17,7 +17,7 @@
 			<section class="secContents">
 				<div class="secContentsInner">
 
-					<form method="POST" name ="form1" action="{{ route('cust.login') }}">
+					<form method="POST" name ="form1" action="{{ route('cust.login') }}" autocomplete="off">
 					@csrf
 
 					<div class="formContainer mg-ajust-midashi">
