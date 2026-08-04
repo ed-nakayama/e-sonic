@@ -18,8 +18,7 @@
 
 
                				{{-- フォーム --}}
-                    		<form method="post" name="regform"  action="{{route('cust.password.update')}}">
-                    		@csrf
+                    		{{ html()->form('POST', route('cust.password.update'))->attribute('name', 'regform')->open() }}
                         
     
                     			<div class="formContainer mg-ajust-midashi">
@@ -77,7 +76,7 @@
                          			<a href="javascript:regform.submit()" class="squareBtn btn-large">{{ __('Change Password') }}</a>
                     			</div>
 
-                        	{{ Form::close() }}
+                        	{{ html()->form()->close() }}
                     
                         </div><!-- /.secContentsInner -->
                     </section><!-- /.secContents -->

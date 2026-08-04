@@ -17,8 +17,7 @@
                     <section class="secContents">
                         <div class="secContentsInner">
 
-							<form method="POST" name ="form1" action="{{ route('login') }}">
-							@csrf
+							{{ html()->form('POST', route('login'))->attribute('name', 'form1')->open() }}
 
                                 <div class="formContainer mg-ajust-midashi">
                                     <div class="item-name" style="width:10px;"></div>
@@ -70,7 +69,7 @@
                                      </div><!-- /.item-input -->
                                 </div>
 --}}
-                        	{{ Form::close() }}
+                        	{{ html()->form()->close() }}
 
 						</div><!-- /.secContentsInner -->
 					</section><!-- /.secContents-mb -->

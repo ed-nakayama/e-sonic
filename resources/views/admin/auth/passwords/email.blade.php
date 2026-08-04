@@ -16,8 +16,7 @@
                     <section class="secContents">
                         <div class="secContentsInner">
 
-							<form method="POST" name ="form1" action="{{ route('cust.password.email') }}">
-							@csrf
+							{{ html()->form('POST', route('cust.password.email'))->attribute('name', 'form1')->open() }}
 
                                 <div class="formContainer mg-ajust-midashi">
                                     <div class="item-name"></div>
@@ -42,7 +41,7 @@
                                     <a href="javascript:form1.submit()" class="squareBtn btn-large">送信</a>
                         		</div><br>
 
-                        	{{ Form::close() }}
+                        	{{ html()->form()->close() }}
 
 						</div><!-- /.secContentsInner -->
 					</section><!-- /.secContents-mb -->

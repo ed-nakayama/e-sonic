@@ -18,8 +18,7 @@
 
 
                				{{-- フォーム --}}
-                    		<form method="post" name="regform"  action="{{route('cust.password.reupdate')}}">
-                    		@csrf
+                    		{{ html()->form('POST', route('cust.password.reupdate'))->attribute('name', 'regform')->open() }}
                         
 								<input type="hidden" name="token" value="{{ $token }}">
 									
@@ -64,7 +63,7 @@
                          			<a href="javascript:regform.submit()" class="squareBtn btn-large">{{ __('Reset Password') }}</a>
                     			</div>
 
-                        	{{ Form::close() }}
+                        	{{ html()->form()->close() }}
                     
                         </div><!-- /.secContentsInner -->
                     </section><!-- /.secContents -->
